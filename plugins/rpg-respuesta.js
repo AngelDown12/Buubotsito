@@ -34,8 +34,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
                     body: '¡Gracias por usar el servicio de confesiones!',
                     mediaType: 1,
                     renderLargerThumbnail: true,
-                    thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgpp',
-                    sourceUrl: 'https://files.catbox.moe/2txrtp.jpgpp'
+                    thumbnailUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIyz1dMPkZuNleUyfXPMsltHwKKdVddTf4-A&usqp=CAU',
+                    sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'
                 }
             }
         });

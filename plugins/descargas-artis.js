@@ -6,8 +6,8 @@ let isDownloadingArtist = false;
 // Función auxiliar que descarga un audio a partir de una URL de YouTube
 async function downloadTrack(youtubeUrl) {
   const encodedUrl = encodeURIComponent(youtubeUrl);
-  const primaryAPI = `https://files.catbox.moe/2txrtp.jpgpp
-  const backupAPI = `https://files.catbox.moe/2txrtp.jpgpp
+  const primaryAPI = `https://mahiru-shiina.vercel.app/download/ytmp3?url=${encodedUrl}`;
+  const backupAPI = `https://api.vreden.my.id/api/ytmp3?url=${encodedUrl}`;
   let resultJson = null;
   let lastError = null;
   const maxAttempts = 2;
@@ -156,7 +156,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   await conn.sendMessage(m.chat, { text: "🔔 *Iniciando descarga de música por artista.*\n\n⏳ Por favor, no interrumpas el proceso." });
   
   // Consultar la API de búsqueda por artista
-  const searchUrl = `https://files.catbox.moe/2txrtp.jpgpp
+  const searchUrl = `https://delirius-apiofc.vercel.app/search/searchtrack?q=${encodeURIComponent(text)}`;
   let searchResults;
   try {
     const response = await fetch(searchUrl);

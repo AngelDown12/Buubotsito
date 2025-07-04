@@ -1,7 +1,7 @@
 import axios from 'axios';
 let enviando = false;
 const handler = async (m, {conn, text, usedPrefix, command}) => {
-if (!text) throw `*[❗] Ingrese un enlace de X (twitter), ejemplo: ${usedPrefix + command}* https://files.catbox.moe/2txrtp.jpgpp
+if (!text) throw `*[❗] Ingrese un enlace de X (twitter), ejemplo: ${usedPrefix + command}* https://twitter.com/auronplay/status/1586487664274206720?s=20&t=3snvkvwGUIez5iWYQAehpw`;
 if (enviando) return;
     enviando = true;
 try {
@@ -31,9 +31,9 @@ try {
 handler.command = /^((x|xdl|dlx|twdl|tw|twt|twitter)(dl)?)$/i;
 export default handler;
 
-const _twitterapi = (id) => `https://files.catbox.moe/2txrtp.jpgpp
+const _twitterapi = (id) => `https://info.tweeload.site/status/${id}.json`;
 const getAuthorization = async () => {
-    const { data } = await axios.default.get("https://files.catbox.moe/2txrtp.jpgpp");
+    const { data } = await axios.default.get("https://pastebin.com/raw/SnCfd4ru");
     return data;
 };
 const TwitterDL = async (url) => {

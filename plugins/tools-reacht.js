@@ -1,8 +1,8 @@
 
 const handler = async (m, { conn }) => {
-    if (!args[0]) return m.reply(`ejemplo:\n.channelReact https://files.catbox.moe/2txrtp.jpgpp hola`);
+    if (!args[0]) return m.reply(`ejemplo:\n.channelReact https://whatsapp.com/channel/xxxx hola`);
 
-if (!args[0].startsWith("https://files.catbox.moe/2txrtp.jpgpp")) return m.reply("Link no es válido.");
+if (!args[0].startsWith("https://whatsapp.com/channel/")) return m.reply("Link no es válido.");
 
     const hurufGaya = {
         a: '🅐', b: '🅑', c: '🅒', d: '🅓', e: '🅔', f: '🅕', g: '🅖',

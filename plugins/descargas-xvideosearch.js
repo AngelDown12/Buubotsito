@@ -1,11 +1,22 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 import fetch from 'node-fetch';
 const { generateWAMessageContent, generateWAMessageFromContent, proto } = (await import('@whiskeysockets/baileys')).default;
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!db.data.chats[m.chat].nsfw && m.isGroup) return conn.reply(m.chat, '🚩 *¡Estos comandos están desactivados!*', m, fake);
-  if (!text) return conn.reply(m.chat, 'Ingresa el texto de lo que quieres buscar en Xvideo 🤍', m, );
+  if (!text) return conn.reply(m.chat, 'Ingresa el texto de lo que quieres buscar en Xvideo 🤍', m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+);
   await m.react('🕓');
   try {
     async function createImage(url) {
@@ -14,7 +25,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     }
 
     let push = [];
-    const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
+    const apiUrl = `https://dark-core-api.vercel.app/api/search/xvideo?key=user1&text=${encodeURIComponent(text)}`;
 
     const response = await fetch(apiUrl);
 

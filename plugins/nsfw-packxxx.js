@@ -7,7 +7,7 @@ m.react('🕑');
 
 let txt = 'Disfruta 🔥🥵';
 
-let img = 'https://files.catbox.moe/2txrtp.jpgpp';
+let img = 'https://delirius-apiofc.vercel.app/nsfw/boobs';
 
 m.react('✅');
 conn.sendMessage(m.chat, { image: { url: img }, caption: txt }, { quoted: fkontak });

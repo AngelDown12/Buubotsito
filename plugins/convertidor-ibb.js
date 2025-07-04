@@ -1,5 +1,3 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 import fs from 'fs'
 import FormData from 'form-data'
 import axios from 'axios'
@@ -19,7 +17,7 @@ let handler = async (m, { conn }) => {
   let formData = new FormData()
   formData.append('image', media, { filename: 'file' })
 
-  let api = await axios.post('https://files.catbox.moe/2txrtp.jpgpp', formData, {
+  let api = await axios.post('https://api.imgbb.com/1/upload?key=10604ee79e478b08aba6de5005e6c798', formData, {
     headers: {
       ...formData.getHeaders()
     }
@@ -36,7 +34,7 @@ let handler = async (m, { conn }) => {
         txt += `  *» Extension* : ${api.data.data.image.extension}\n`
         txt += `  *» Delete* : ${api.data.data.delete_url}\n\n`
         txt += `> *${dev}*`
-    await conn.sendFile(m.chat, api.data.data.url, 'ibb.jpg', txt, m, null, )
+    await conn.sendFile(m.chat, api.data.data.url, 'ibb.jpg', txt, m, null, rcanal)
     await m.react('✅')
   } else {
     await m.react('✖️')

@@ -2,7 +2,7 @@
 - Código Creado Por Izumi-kzx
 - Código Auténtico Por Code Titans
 - Power By Team Code Titans
-- https://files.catbox.moe/2txrtp.jpgpp
+- https://whatsapp.com/channel/0029ValMlRS6buMFL9d0iQ0S
 */
 // *[ 🧇 BING IMAGE ]*
 import fetch from 'node-fetch'
@@ -15,7 +15,7 @@ const { imageMessage } = await generateWAMessageContent({ image: { url } }, { up
 return imageMessage
 }
 let push = []
-let api = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
+let api = await fetch(`https://delirius-apiofc.vercel.app/search/bingimage?query=${encodeURIComponent(text)}`)
 let json = await api.json()
 if (!json.results || json.results.length === 0) return m.reply('No se encontraron imágenes para tu búsqueda.')
 for (let item of json.results.slice(0, 5)) {

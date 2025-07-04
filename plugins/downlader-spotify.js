@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, command, usedPrefix}) => {
 }
 
   try {
-    const res = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
+    const res = await fetch(`https://api.nekorinn.my.id/downloader/spotifyplay?q=${encodeURIComponent(text)}`);
     const json = await res.json();
 
     if (!json.status ||!json.result?.downloadUrl) {

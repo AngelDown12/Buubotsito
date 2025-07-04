@@ -1,5 +1,3 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 let handler = async (m, { conn,usedPrefix, command, text }) => {
 if(isNaN(text) && !text.match(/@/g)){
 
@@ -8,8 +6,34 @@ var number = text.split`@`[1]
 }else if(!isNaN(text)) {
 var number = text
 }
-if(!text && !m.quoted) return conn.reply(m.chat, `🚩 Menciona a una persona.`, m, )
-if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `🚩 Menciona a una persona.`, m, )
+if(!text && !m.quoted) return conn.reply(m.chat, `🚩 Menciona a una persona.`, m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+)
+if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `🚩 Menciona a una persona.`, m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+)
 try {
 if(text) {
 var user = number + '@s.whatsapp.net'
@@ -21,7 +45,20 @@ var user = number + '@s.whatsapp.net'
 } catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'demote')
-await conn.reply(m.chat, `🚩 Usuario degradado.`, m, )
+await conn.reply(m.chat, `🚩 Usuario degradado.`, m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+)
 await m.react('✅')
 }
 

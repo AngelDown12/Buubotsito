@@ -2,7 +2,7 @@
 var handler = async (m, { conn, args }) => {
     try {
         let group = m.chat;
-        let link = 'https://files.catbox.moe/2txrtp.jpgpp' + await conn.groupInviteCode(group);
+        let link = 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group);
         conn.reply(m.chat, '🔗 ' + link, m, { detectLink: true });
     } catch (error) {
         conn.reply(m.chat, 'Error al obtener el enlace del grupo. Asegúrate de que soy administrador y estoy en un grupo.', m);

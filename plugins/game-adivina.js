@@ -1,5 +1,3 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 const banderas = [
   { pais: "Honduras", emoji: "🇭🇳" },
   { pais: "México", emoji: "🇲🇽" },
@@ -83,7 +81,7 @@ let handler = async (m, { conn, usedPrefix }) => {
   await conn.sendMessage(
     m.chat,
     { text, buttons, viewOnce: true },
-    { quoted: m, }
+    { quoted: m,rcanal }
   );
 };
 
@@ -104,7 +102,7 @@ handler.before = async (m, { conn, usedPrefix }) => {
     return await conn.sendMessage(
       m.chat,
       { text, buttons, viewOnce: true },
-      { quoted: m,}
+      { quoted: m,rcanal}
     );
   } else {
     juego.intentos--;
@@ -127,7 +125,7 @@ handler.before = async (m, { conn, usedPrefix }) => {
       return await conn.sendMessage(
         m.chat,
         { text: `❌ Incorrecto. Te quedan ${juego.intentos} corazón(es) ❤️` },
-        { quoted: m,}
+        { quoted: m,rcanal}
       );
     }
   }

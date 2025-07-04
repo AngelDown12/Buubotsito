@@ -2,7 +2,7 @@
 import axios from "axios";
 
 let handler = async (m, { conn}) => {
-  let res = (await axios.get(`https://files.catbox.moe/2txrtp.jpgpp
+  let res = (await axios.get(`https://raw.githubusercontent.com/davidprospero123/api-anime/main/BOT-JSON/Messi.json`)).data;
   let url = res[Math.floor(Math.random() * res.length)];
 
   await conn.sendMessage(

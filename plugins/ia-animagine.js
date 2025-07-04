@@ -42,7 +42,7 @@ Ejemplo: *${usedPrefix + command}* 1girl, cute, school|1:1`
 
         const generateImage = async (prompt, aspect_ratio) => {
             const session_hash = Math.random().toString(36).substring(2);
-            const url = `https://files.catbox.moe/2txrtp.jpgpp
+            const url = `https://asahina2k-animagine-xl-4-0.hf.space/queue/join?`;
             
             const conf = {
                 samplers: ['Euler a'],
@@ -93,7 +93,7 @@ Ejemplo: *${usedPrefix + command}* 1girl, cute, school|1:1`
             let resultUrl = null;
             let attempts = 0;
             while (!resultUrl && attempts < 20) {
-                const res = await axios.get(`https://files.catbox.moe/2txrtp.jpgpp {
+                const res = await axios.get(`https://asahina2k-animagine-xl-4-0.hf.space/queue/data?session_hash=${session_hash}`, {
                     headers: {
                         'User-Agent': 'Mozilla/5.0'
                     }

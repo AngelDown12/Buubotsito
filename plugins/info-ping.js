@@ -1,5 +1,3 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 import speed from 'performance-now'
 import { spawn, exec, execSync } from 'child_process'
 
@@ -10,7 +8,20 @@ let handler = async (m, { conn }) => {
           let child = stdout.toString("utf-8");
           let ssd = child.replace(/Memory:/, "Ram:");
 
-          conn.reply(m.chat, `*Pong* 🏓 ${latensi.toFixed(4)} ms`, m, );
+          conn.reply(m.chat, `*Pong* 🏓 ${latensi.toFixed(4)} ms`, m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+);
             });
 }
 handler.help = ['ping']

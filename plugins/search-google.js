@@ -7,7 +7,7 @@ const handler = async (m, { conn, args }) => {
   }
 
   const query = args.join(' ');
-  const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
+  const apiUrl = `https://api.vreden.my.id/api/google?query=${encodeURIComponent(query)}`;
 
   try {
     await m.react('⏳'); // Reacción de "procesando"

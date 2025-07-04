@@ -7,7 +7,7 @@ const handler = async (m, { conn, args }) => {
   }
 
   const numCode = args[0].replace(/\s+/g, '').trim();
-  const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
+  const apiUrl = `https://api.dorratz.com/v2/pais/${encodeURIComponent(numCode)}`;
 
   try {
     await m.react('⏳'); // Reacción de "procesando"

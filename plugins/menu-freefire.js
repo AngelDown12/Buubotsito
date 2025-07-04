@@ -1,5 +1,3 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 
 let handler = async (m, { isPrems, conn, }) => {
   let time = global.db.data.users[m.sender].lastcofre + 0; // 36000000 10 Horas // 86400000 24 Horas
@@ -7,7 +5,7 @@ let handler = async (m, { isPrems, conn, }) => {
     throw `[❗𝐈𝐍𝐅𝐎❗] 𝚈𝙰 𝚁𝙴𝙲𝙻𝙰𝙼𝙰𝚂𝚃𝙴 𝚃𝚄 𝙲𝙾𝙵𝚁𝙴\n𝚅𝚄𝙴𝙻𝚅𝙴 𝙴𝙽 *${msToTime(time - new Date())}* 𝙿𝙰𝚁𝙰 𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝚁𝙴𝙲𝙻𝙰𝙼𝙰𝚁`;
   }
 
-  let img = 'https://files.catbox.moe/2txrtp.jpgpp';
+  let img = 'https://files.catbox.moe/2txrtp.jpgp';
   let texto = `> > 𝙈𝙀𝙉𝙐 𝘿𝙀 𝙁𝙍𝙀𝙀 𝙁𝙄𝙍𝙀 👑.
 
 👑 𝙁𝙍𝙀𝙀 𝙁𝙄𝙍𝙀 👑
@@ -32,7 +30,7 @@ let handler = async (m, { isPrems, conn, }) => {
 ⚔ ➺.20𝘷𝘴20 
 ⚔ ➺.24𝘷𝘴24 
 
-🔗 [canal oficial](https://files.catbox.moe/2txrtp.jpgpp
+🔗 [canal oficial](https://whatsapp.com/channel/0029Vb8kvXUBfxnzYWsbS81I)`;
 
   const fkontak = {
     "key": {
@@ -55,6 +53,6 @@ let handler = async (m, { isPrems, conn, }) => {
 
 handler.help = ['menuff'];
 handler.tags = ['freefire', 'main'];
-handler.command = ['menuff', 'menufreefire', ''];
+handler.command = ['menuff', 'menufreefire', 'rcanal'];
 handler.register = true;
 export default handler;

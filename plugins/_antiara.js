@@ -55,7 +55,7 @@ const getMimeType = (fileName) => {
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
     if (command === 'mediafire') {
         if (!text) {
-            return reply(`❗️ *Por favor, ingresa un enlace de Mediafire*\n\nEjemplo: ${usedPrefix + command} https://files.catbox.moe/2txrtp.jpgpp conn, m);
+            return reply(`❗️ *Por favor, ingresa un enlace de Mediafire*\n\nEjemplo: ${usedPrefix + command} https://www.mediafire.com/file/abcd1234/file_name`, conn, m);
         }
 
         // Verificar si el servidor está ocupado
@@ -78,7 +78,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
                 fileName = 'archivo_descargado'; // Asignar nombre genérico si no se pudo extraer
             }
 
-            const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
+            const apiUrl = `https://www.dark-yasiya-api.site/download/mfire?url=${encodeURIComponent(text)}`;
             const apiResponse = await fetch(apiUrl);
             const data = await apiResponse.json();
 

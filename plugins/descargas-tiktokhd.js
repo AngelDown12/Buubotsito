@@ -1,11 +1,22 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 import axios from "axios";
 import FormData from "form-data";
 import cheerio from "cheerio";
 
 let handler = async (m, { conn, usedPrefix, command, text, args }) => {
-  if (!text) return conn.reply(m.chat, '*\`Ingresa El link Del vídeo a descargar 🤍\`*', m, )
+  if (!text) return conn.reply(m.chat, '*\`Ingresa El link Del vídeo a descargar 🤍\`*', m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+)
     try {
 let data = await tiktokdl(text)
 console.log(data)
@@ -48,7 +59,7 @@ async function tiktokdl(url) {
     form.append("lang", "id");
 
     try {
-        let { data } = await axios("https://files.catbox.moe/2txrtp.jpgpp", {
+        let { data } = await axios("https://savetik.co/api/ajaxSearch", {
             method: "post",
             data: form,
             headers: {

@@ -9,7 +9,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
   const appleMusic = {
     search: async (query) => {
-      const url = `https://files.catbox.moe/2txrtp.jpgpp
+      const url = `https://music.apple.com/us/search?term=${query}`;
       try {
         const { data } = await axios.get(url);
         const $ = cheerio.load(data);
@@ -30,14 +30,14 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
   const appledown = {
     getData: async (urls) => {
-      const url = `https://files.catbox.moe/2txrtp.jpgpp
+      const url = `https://aaplmusicdownloader.com/api/applesearch.php?url=${urls}`;
       try {
         const response = await axios.get(url, {
           headers: {
             'Accept': 'application/json, text/javascript, */*; q=0.01',
             'X-Requested-With': 'XMLHttpRequest',
             'User-Agent': 'MyApp/1.0',
-            'Referer': 'https://files.catbox.moe/2txrtp.jpgpp'
+            'Referer': 'https://aaplmusicdownloader.com/'
           }
         });
         return response.data;
@@ -63,12 +63,12 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         musicData.url
       ]));
 
-      const downloadUrl = 'https://files.catbox.moe/2txrtp.jpgpp';
+      const downloadUrl = 'https://aaplmusicdownloader.com/song.php';
       const headers = {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-        'Origin': 'https://files.catbox.moe/2txrtp.jpgpp',
-        'Referer': 'https://files.catbox.moe/2txrtp.jpgpp',
+        'Origin': 'https://aaplmusicdownloader.com',
+        'Referer': 'https://aaplmusicdownloader.com/',
         'User-Agent': 'MyApp/1.0'
       };
 
@@ -100,7 +100,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     },
 
     getAudio: async (trackName, artist, urlMusic, token) => {
-      const url = 'https://files.catbox.moe/2txrtp.jpgpp';
+      const url = 'https://aaplmusicdownloader.com/api/composer/swd.php';
       const data = {
         song_name: trackName,
         artist_name: artist,
@@ -112,7 +112,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         'Accept': 'application/json, text/javascript, */*; q=0.01',
         'X-Requested-With': 'XMLHttpRequest',
         'User-Agent': 'MyApp/1.0',
-        'Referer': 'https://files.catbox.moe/2txrtp.jpgpp'
+        'Referer': 'https://aaplmusicdownloader.com/song.php#'
       };
       try {
         const response = await axios.post(url, qs.stringify(data), { headers });

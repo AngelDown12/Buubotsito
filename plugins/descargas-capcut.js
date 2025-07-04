@@ -7,7 +7,7 @@ let handler = async (m, { conn, args }) => {
 
     await m.react('🕓');
     try {
-        const response = await axios.get(`https://files.catbox.moe/2txrtp.jpgpp
+        const response = await axios.get(`https://api.siputzx.my.id/api/d/capcut?url=${encodeURIComponent(args[0])}`);
         const data = response.data;
 
         if (data.status) {

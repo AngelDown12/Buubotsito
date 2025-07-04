@@ -15,7 +15,7 @@ const fetchImage = async (url, timeout = 10000) => {
 };
 
 const imageCarouselHandler = async (m, { conn, command, usedPrefix, text = "girls" }) => {
-  const apiUrl = "https://files.catbox.moe/2txrtp.jpgpp";
+  const apiUrl = "https://delirius-apiofc.vercel.app/nsfw/girls";
 
   try {
     const imagePromises = Array.from({ length: 6 }, () => fetchImage(apiUrl));

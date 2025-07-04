@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!args[0]) {
-    return m.reply(`🎩 Ingrese una URL de TikTok\n*Ejemplo:* ${usedPrefix + command} https://files.catbox.moe/2txrtp.jpgpp
+    return m.reply(`🎩 Ingrese una URL de TikTok\n*Ejemplo:* ${usedPrefix + command} https://vm.tiktok.com/ZMh3KL31o/`);
   }
 
   const tiktokUrl = args[0];
@@ -14,7 +14,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   try {
     m.react('🕑'); 
 
-    let api = `https://files.catbox.moe/2txrtp.jpgpp
+    let api = `https://eliasar-yt-api.vercel.app/api/search/tiktok?query=${encodeURIComponent(tiktokUrl)}`;
     let response = await fetch(api);
 
     if (!response.ok) {

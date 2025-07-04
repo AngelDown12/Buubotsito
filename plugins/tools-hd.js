@@ -49,7 +49,7 @@ async function uploadToUguu(filePath) {
   form.append("files[]", fs.createReadStream(filePath))
 
   try {
-    const res = await fetch("https://files.catbox.moe/2txrtp.jpgpp", {
+    const res = await fetch("https://uguu.se/upload.php", {
       method: "POST",
       headers: form.getHeaders(),
       body: form
@@ -65,7 +65,7 @@ async function uploadToUguu(filePath) {
 }
 
 async function upscaleImage(url) {
-  const res = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
+  const res = await fetch(`https://api.siputzx.my.id/api/iloveimg/upscale?image=${encodeURIComponent(url)}`)
   if (!res.ok) throw new Error("No se pudo mejorar la imagen.")
   return await res.buffer()
 }

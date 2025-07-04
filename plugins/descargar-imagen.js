@@ -12,7 +12,7 @@ let handler = async (m, { conn, text }) => {
         }
 
         let push = [];
-        let api = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
+        let api = await fetch(`https://api.diioffc.web.id/api/search/gimage?query=${encodeURIComponent(text)}`);
         let json = await api.json();
 
         for (let result of json.result) {

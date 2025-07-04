@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, command }) => {
   if (!text) return m.reply(`Ejemplo: .${command} Barboza`) 
 
   try {
-    const searchRes = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
+    const searchRes = await fetch(`https://zenzxz.dpdns.org/search/stickerlysearch?query=${encodeURIComponent(text)}`)
     const searchJson = await searchRes.json()
 
     if (!searchJson.status || !Array.isArray(searchJson.data) || searchJson.data.length === 0) {
@@ -14,7 +14,7 @@ let handler = async (m, { conn, text, command }) => {
 
     const pick = searchJson.data[Math.floor(Math.random() * searchJson.data.length)]
 
-    const detailUrl = `https://files.catbox.moe/2txrtp.jpgpp
+    const detailUrl = `https://zenzxz.dpdns.org/tools/stickerlydetail?url=${encodeURIComponent(pick.url)}`
     const detailRes = await fetch(detailUrl)
     const detailJson = await detailRes.json()
 

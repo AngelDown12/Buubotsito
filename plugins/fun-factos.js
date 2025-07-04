@@ -3,7 +3,7 @@ const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/b
 // Definir las variables no definidas
 const packname = 'Mi Paquete'; // Cambia esto por el nombre de tu paquete
 const dev = 'Desarrollador'; // Cambia esto por el nombre del desarrollador
-const channel = 'https://files.catbox.moe/2txrtp.jpgpp'; // Cambia esto por la URL de tu canal
+const channel = 'https://example.com'; // Cambia esto por la URL de tu canal
 
 var handler = async (m, { conn, text }) => {
     conn.reply(m.chat, '🍭 Buscando un facto, espere un momento...', m, {

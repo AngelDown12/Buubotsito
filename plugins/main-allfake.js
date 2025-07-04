@@ -1,5 +1,3 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 import pkg from '@whiskeysockets/baileys'
 import fs from 'fs'
 import fetch from 'node-fetch'
@@ -32,10 +30,10 @@ var handler = async function (m, conn, db) {
 
     // Obtener información del usuario
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-    let fotoperfil = await conn.profilePictureUrl(who, 'image').catch(() => 'https://files.catbox.moe/2txrtp.jpgpp')
+    let fotoperfil = await conn.profilePictureUrl(who, 'image').catch(() => 'https://files.catbox.moe/2txrtp.jpgp')
 
     // Obtener nacionalidad
-    let api = await axios.get(`https://files.catbox.moe/2txrtp.jpgpp'+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}`)
+    let api = await axios.get(`https://deliriussapi-oficial.vercel.app/tools/country?text=${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}`)
     let userNationality = api.data.result ? `${api.data.result.name} ${api.data.result.emoji}` : 'Desconocido'
 
     // Obtener usuario de la base de datos
@@ -95,7 +93,7 @@ var handler = async function (m, conn, db) {
     }
 
     // Selección de canal aleatorio
-    let  = { 
+    let rcanal = { 
         contextInfo: { 
             isForwarded: true, 
             forwardedNewsletterMessageInfo: { 
@@ -108,15 +106,15 @@ var handler = async function (m, conn, db) {
                 title: "Texto del bot", 
                 body: '🚀 ♡⃝Barboza𝒕ᚐ҉ᚐ', 
                 previewType: "PHOTO", 
-                thumbnailUrl: "https://files.catbox.moe/2txrtp.jpgpp", 
-                sourceUrl: "https://files.catbox.moe/2txrtp.jpgpp", 
+                thumbnailUrl: "https://files.catbox.moe/2txrtp.jpgp", 
+                sourceUrl: "https://whatsapp.com/channel/0029Vaua0ZD3gvWjQaIpSy18", 
                 mediaType: 1, 
                 renderLargerThumbnail: false 
             }
         } 
     }
 
-    return { fotoperfil, userNationality, pushname, taguser, rimg, wait, fkontak,  }
+    return { fotoperfil, userNationality, pushname, taguser, rimg, wait, fkontak, rcanal }
 }
 
 export default handler

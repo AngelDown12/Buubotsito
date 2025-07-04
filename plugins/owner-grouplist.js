@@ -18,7 +18,7 @@ try {
     *➤ Admin:* ${isBotAdmin ? '✔ Sí' : '❌ No'}
     *➤ Estado:* ${participantStatus}
     *➤ Total de Participantes:* ${totalParticipants}
-    *➤ Link:* ${isBotAdmin ? `https://files.catbox.moe/2txrtp.jpgpp conn.groupInviteCode(jid) || '--- (Error) ---'}` : '--- (No admin) ---'}\n\n`;
+    *➤ Link:* ${isBotAdmin ? `https://chat.whatsapp.com/${await conn.groupInviteCode(jid) || '--- (Error) ---'}` : '--- (No admin) ---'}\n\n`;
   }
   m.reply(`*Lista de grupos del Bot* 🤖\n\n*—◉ Total de grupos:* ${totalGroups}\n\n${txt}`.trim());
 } catch {

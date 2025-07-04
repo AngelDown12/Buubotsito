@@ -1,6 +1,6 @@
 
 let handler = async (m, { conn }) => {
-    const imageUrl = 'https://files.catbox.moe/2txrtp.jpgpp'; // Reemplaza esto con la URL de tu imagen
+    const imageUrl = 'https://files.catbox.moe/2txrtp.jpgp'; // Reemplaza esto con la URL de tu imagen
     await conn.sendMessage(m.chat, { image: { url: imageUrl } }, { quoted: m });
 }
 

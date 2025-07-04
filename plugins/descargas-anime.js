@@ -8,7 +8,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
         if (!args[0]) return m.reply(`𝙻𝚘 𝚊𝚗𝚍𝚊𝚜 𝚑𝚊𝚌𝚒𝚎𝚗𝚍𝚘 𝚖𝚊𝚕 𝚝𝚎 𝚐𝚞𝚒𝚊𝚛𝚎 ${usedPrefix + command} <ᴀɴɪᴍᴇɪᴅ, ᴘᴀʀᴀ ᴄᴏɴꜱᴜʟᴛᴀʀ ᴇʟ ɪᴅ ᴅᴇʟ ᴀɴɪᴍᴇ ᴜꜱᴀ .ᴀɴɪᴍᴇꜰʟᴠꜱᴇᴀʀᴄʜ> <ᴄᴀᴘɪᴛᴜʟᴏ>\n .animedl to-love-ru-ova 1`);
         const animeId = args[0];
         const episode = args[1] || 1;
-        const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
+        const apiUrl = `https://animeflvapi.vercel.app/download/anime/${animeId}/${episode}`;
         const response = await fetch(apiUrl);
         if (!response.ok) throw new Error('Error al obtener datos de la API');
         const { servers } = await response.json();

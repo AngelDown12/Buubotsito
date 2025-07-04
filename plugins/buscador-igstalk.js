@@ -1,15 +1,26 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) {
-    return conn.reply(m.chat, `🚩 Por favor, ingrese un nombre de usuario para buscar.\n\nEjemplo:\n> *${usedPrefix + command}* xrljose`, m, );
+    return conn.reply(m.chat, `🚩 Por favor, ingrese un nombre de usuario para buscar.\n\nEjemplo:\n> *${usedPrefix + command}* xrljose`, m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+);
   }
 
   await m.react('🕓');
   try {
-    const res = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
+    const res = await fetch(`https://delirius-apiofc.vercel.app/tools/igstalk?username=${encodeURIComponent(text)}`);
     const json = await res.json();
 
     if (!json.data) {

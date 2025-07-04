@@ -1,4 +1,4 @@
-// By https://files.catbox.moe/2txrtp.jpgpp
+// By https://github.com/elrebelde21
 
 let handler = async (m, { conn, text}) => {
 

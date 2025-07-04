@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command }) => {
 await m.react('🕓')
 try {
-let res = await fetch('https://files.catbox.moe/2txrtp.jpgpp')
+let res = await fetch('https://api.waifu.pics/sfw/neko')
 if (!res.ok) return 
 let json = await res.json()
 if (!json.url) return 

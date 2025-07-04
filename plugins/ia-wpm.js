@@ -1,7 +1,7 @@
 /**
   @ 🍀 Plugins WPW
-  @ 🍀 Fuente: https://files.catbox.moe/2txrtp.jpgpp
-  @ 🍀 Scrape: https://files.catbox.moe/2txrtp.jpgpp
+  @ 🍀 Fuente: https://whatsapp.com/channel/0029VbBDTFd6mYPDtnetTK1f
+  @ 🍀 Scrape: https://whatsapp.com/channel/0029VakezCJDp2Q68C61RH2C/3637
 **/
 
 import axios from 'axios'
@@ -46,14 +46,14 @@ Responde / Envía una imagen con la descripción *"${usedPrefix + command} <tipo
             throw new Error(`Filtro no disponible. Elige entre: ${FILTROS.join(', ')}`)
         }
 
-        const res = await axios.post('https://files.catbox.moe/2txrtp.jpgpp ', {
+        const res = await axios.post('https://wpw.my.id/api/process-image ', {
             imageData: base64Input,
             filter: filtroValido.toLowerCase()
         }, {
             headers: {
                 'Content-Type': 'application/json',
-                'Origin': 'https://files.catbox.moe/2txrtp.jpgpp ',
-                'Referer': 'https://files.catbox.moe/2txrtp.jpgpp '
+                'Origin': 'https://wpw.my.id ',
+                'Referer': 'https://wpw.my.id/ '
             }
         })
 
@@ -69,7 +69,7 @@ Responde / Envía una imagen con la descripción *"${usedPrefix + command} <tipo
             image: processedBuffer,
             caption: `✨ *Filtro aplicado con éxito* ✨
 - - 🍀 *Filtro:* ${filtroValido}
-- ⁠- 🔗 *Fuente:* https://files.catbox.moe/2txrtp.jpgpp
+- ⁠- 🔗 *Fuente:* https://wpw.my.id`
         })
 
         await conn.sendMessage(m.chat, { 

@@ -1,8 +1,19 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 let handler = async (m, { conn, usedPrefix, command }) => {
 
-if (!m.quoted) return conn.reply(m.chat, `🚩 Responde al mensaje que deseas eliminar.`, m, )
+if (!m.quoted) return conn.reply(m.chat, `🚩 Responde al mensaje que deseas eliminar.`, m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+)
 try {
 let delet = m.message.extendedTextMessage.contextInfo.participant
 let bang = m.message.extendedTextMessage.contextInfo.stanzaId

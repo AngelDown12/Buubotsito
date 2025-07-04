@@ -1,24 +1,24 @@
 let handler = async (m) => {
     const memes = [
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp',
-        'https://files.catbox.moe/2txrtp.jpgpp'
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp',
+        'https://files.catbox.moe/2txrtp.jpgp'
     ];
 
     const randomMeme = memes[Math.floor(Math.random() * memes.length)];

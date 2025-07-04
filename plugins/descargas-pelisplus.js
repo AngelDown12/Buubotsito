@@ -1,15 +1,26 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 
 import axios from 'axios';
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0]) return conn.reply(m.chat, `🚩 Ingrese un título de película para buscar\n\nEjemplo:\n> *${usedPrefix + command}* diablo`, m, );
+    if (!args[0]) return conn.reply(m.chat, `🚩 Ingrese un título de película para buscar\n\nEjemplo:\n> *${usedPrefix + command}* diablo`, m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+);
 
     await m.react('🕓');
     try {
         // Hacer una solicitud a la API de búsqueda de películas
-        const response = await axios.get(`https://files.catbox.moe/2txrtp.jpgpp' '))}`);
+        const response = await axios.get(`https://api.dorratz.com/v2/pelis-search?q=${encodeURIComponent(args.join(' '))}`);
         
         // Verificar si la solicitud fue exitosa
         if (!response.data.status) {

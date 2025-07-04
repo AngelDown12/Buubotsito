@@ -18,7 +18,7 @@ let handler = async (m, { conn, args }) => {
   }
 
   try {
-    const response = await axios.get(`https://files.catbox.moe/2txrtp.jpgpp
+    const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${args[0]}&units=metric&appid=060a6bcfa19809c2cd4d97a212b19273`);
     const res = response.data;
     const name = res.name;
     const Country = res.sys.country;

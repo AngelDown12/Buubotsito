@@ -1,5 +1,3 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 import fetch from "node-fetch";
 import yts from "yt-search";
 import axios from "axios";
@@ -15,7 +13,7 @@ const ddownr = {
 
     const config = {
       method: "GET",
-      url: `https://files.catbox.moe/2txrtp.jpgpp
+      url: `https://p.oceansaver.in/ajax/download.php?format=${format}&url=${encodeURIComponent(url)}&api=dfcb6d76f2f6a9894gjkege8a4ab232222`,
       headers: {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/91.0.4472.124 Safari/537.36"
       }
@@ -39,7 +37,7 @@ const ddownr = {
   cekProgress: async (id) => {
     const config = {
       method: "GET",
-      url: `https://files.catbox.moe/2txrtp.jpgpp
+      url: `https://p.oceansaver.in/ajax/progress.php?id=${id}`,
       headers: {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/91.0.4472.124 Safari/537.36"
       }
@@ -65,8 +63,20 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     await m.react('🌀')
   try {
     if (!text.trim()) {
-      𝐁𝐎𝐓 𝐁𝐔𝐔 🔮 🔮
-https://files.catbox.moe/2txrtp.jpgpp
+      return conn.reply(m.chat, "⚡ *𝐁𝐎𝐓 𝐁𝐔𝐔 🔮 MD* | Ingresa el nombre o enlace de la canción/video que deseas buscar.", m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+);
     }
 
     const search = await yts(text);
@@ -80,8 +90,7 @@ https://files.catbox.moe/2txrtp.jpgpp
     const thumb = (await conn.getFile(thumbnail))?.data;
 
     const infoMessage = `
-𝐁𝐎𝐓 𝐁𝐔𝐔 🔮 🔮
-https://files.catbox.moe/2txrtp.jpgpp
+╔════〘 *𝐁𝐎𝐓 𝐁𝐔𝐔 🔮 MD 🌀* 〙════╗
 ║ *✦ Título:* ${title}
 ║ *✦ Duración:* ${timestamp}
 ║ *✦ Vistas:* ${vistas}
@@ -117,10 +126,10 @@ https://files.catbox.moe/2txrtp.jpgpp
 
     } else if (["play2", "ytv", "ytmp4"].includes(command)) {
       const sources = [
-        `https://files.catbox.moe/2txrtp.jpgpp
-        `https://files.catbox.moe/2txrtp.jpgpp
-        `https://files.catbox.moe/2txrtp.jpgpp
-        `https://files.catbox.moe/2txrtp.jpgpp
+        `https://api.siputzx.my.id/api/d/ytmp4?url=${url}`,
+        `https://api.zenkey.my.id/api/download/ytmp4?apikey=zenkey&url=${url}`,
+        `https://axeel.my.id/api/download/video?url=${encodeURIComponent(url)}`,
+        `https://delirius-apiofc.vercel.app/download/ytmp4?url=${url}`
       ];
 
       let success = false;
@@ -136,8 +145,7 @@ https://files.catbox.moe/2txrtp.jpgpp
               video: { url: downloadUrl },
               fileName: `${title}.mp4`,
               mimetype: "video/mp4",
-              𝐁𝐎𝐓 𝐁𝐔𝐔 🔮 🔮
-https://files.catbox.moe/2txrtp.jpgpp
+              caption: "🌪️ Aquí tienes tu video descargado por *𝐁𝐎𝐓 𝐁𝐔𝐔 🔮 MD* 🌪️",
               thumbnail: thumb
             }, { quoted: fkontak });
             break;

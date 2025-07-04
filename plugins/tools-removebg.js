@@ -7,7 +7,7 @@ try {
 const formData = new FormData();
 formData.append("size", "auto");
 formData.append("image_url", text);
-const response = await fetch("https://files.catbox.moe/2txrtp.jpgpp", {
+const response = await fetch("https://api.remove.bg/v1.0/removebg", {
 method: "POST",
 headers: { "X-Api-Key": "pZoqmwkwmMSJAVdJFDnMgWB8" },
 body: formData,

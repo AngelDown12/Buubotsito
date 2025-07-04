@@ -10,7 +10,7 @@ const handler = async (m, { conn, args, command, usedPrefix, text }) => {
 
     // Verificar si se recibió un argumento (enlace)
     if (!args[0]) {
-        return conn.reply(m.chat, `*[❗𝐈𝐍𝐅𝐎❗]*\n\n📝 *Instrucciones:* \nPara descargar un video de Xvideos, por favor ingresa un enlace válido.\nEjemplo: \n*${usedPrefix + command} https://files.catbox.moe/2txrtp.jpgpp m);
+        return conn.reply(m.chat, `*[❗𝐈𝐍𝐅𝐎❗]*\n\n📝 *Instrucciones:* \nPara descargar un video de Xvideos, por favor ingresa un enlace válido.\nEjemplo: \n*${usedPrefix + command} https://www.xvideos.com/video70389849/pequena_zorra_follada_duro*`, m);
     }
 
     try {
@@ -19,7 +19,7 @@ const handler = async (m, { conn, args, command, usedPrefix, text }) => {
         const res = await xvideosdl(args[0]);
         conn.sendMessage(m.chat, { document: { url: res.result.url }, mimetype: 'video/mp4', fileName: res.result.title }, { quoted: m });
     } catch (e) {
-        throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*\n\n*- 𝙲𝙾𝚁𝚁𝙾𝙱𝙾𝚁𝙴 𝚀𝚄𝙴 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 𝚂𝙴𝙰 𝚂𝙸𝙼𝙸𝙻𝙰𝚁 𝙰:*\n*◉ https://files.catbox.moe/2txrtp.jpgpp
+        throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*\n\n*- 𝙲𝙾𝚁𝚁𝙾𝙱𝙾𝚁𝙴 𝚀𝚄𝙴 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 𝚂𝙴𝙰 𝚂𝙸𝙼𝙸𝙻𝙰𝚁 𝙰:*\n*◉ https://www.xvideos.com/video70389849/pequena_zorra_follada_duro*`;
     }
 };
 

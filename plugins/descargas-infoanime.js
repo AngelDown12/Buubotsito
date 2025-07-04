@@ -1,12 +1,36 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 import fetch from 'node-fetch'
 
 var handler = async (m, { conn, usedPrefix, command, text }) => {
 
-if (!text) return conn.reply(m.chat, `『✎』 *Ingrese el nombre de algun anime*\n\nEjemplo, ${usedPrefix + command} Roshidere`, m, )
-let res = await fetch('https://files.catbox.moe/2txrtp.jpgpp' + text)
-if (!res.ok) return conn.reply(m.chat, `⚠️ *Ocurrió un fallo*`, m, )
+if (!text) return conn.reply(m.chat, `『✎』 *Ingrese el nombre de algun anime*\n\nEjemplo, ${usedPrefix + command} Roshidere`, m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+)
+let res = await fetch('https://api.jikan.moe/v4/manga?q=' + text)
+if (!res.ok) return conn.reply(m.chat, `⚠️ *Ocurrió un fallo*`, m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+)
 
 let json = await res.json()
 let { chapters, title_japanese, url, type, score, members, background, status, volumes, synopsis, favorites } = json.data[0]

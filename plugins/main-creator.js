@@ -14,7 +14,7 @@ async function handler(m, { conn }) {
 *📝 Descripción:* ${about}
 *🏢 Empresa:* ${empresa}
 *📧 Email:* sebastianbarbaro82@gmail.com
-*📸 Instagram:* https://files.catbox.moe/2txrtp.jpgpp
+*📸 Instagram:* https://www.instagram.com/sebastian_barboza13
 `;
 
     await conn.sendMessage(m.chat, { text: caption }, { quoted: m });

@@ -18,7 +18,7 @@ let handler = async (m, { conn }) => {
 
     if (m.isGroup) {
         // URL de la imagen
-        const imageUrl ='https://files.catbox.moe/2txrtp.jpgpp'; // Cambia esta URL por la de la imagen que deseas enviar
+        const imageUrl ='https://files.catbox.moe/2txrtp.jpgp'; // Cambia esta URL por la de la imagen que deseas enviar
 
         // Envía la imagen con el mensaje
         await conn.sendMessage(m.chat, { image: { url: imageUrl }, caption: message }, { mimetype: 'image/jpeg' });

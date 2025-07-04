@@ -8,7 +8,7 @@ if (!text) throw `*Ejemplo:*\n${usedPrefix + command} texto`
 let ps = groupMetadata.participants.map(v => v.id)
 let a = ps.getRandom()
 let k = Math.floor(Math.random() * 70)
-let vn = `https://files.catbox.moe/2txrtp.jpgpp
+let vn = `https://hansxd.nasihosting.com/sound/sound${k}.mp3`
 let top = `*\`[ 🥳 ＦＥＬＩＣＩＤＡＤＥＳ 🥳]\`*\n\n${user(a)} 🥳\nAcaba de ganar el sorteo felicitaciones 🎉`
 let txt = ''
 let count = 0

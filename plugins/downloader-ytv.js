@@ -24,7 +24,7 @@ const fetchWithRetries = async (url, maxRetries = 2) => {
 let handler = async (m, { conn, text, usedPrefix }) => {
   if (!text || !/^https:\/\/(www\.)?youtube\.com\/watch\?v=/.test(text)) {
     return conn.sendMessage(m.chat, {
-      text: `⚠️ *¡Atención!*\n\n💡 *Por favor ingresa un enlace válido de YouTube para descargar el video.*\n\n📌 *Ejemplo:* ${usedPrefix}ytv https://files.catbox.moe/2txrtp.jpgpp
+      text: `⚠️ *¡Atención!*\n\n💡 *Por favor ingresa un enlace válido de YouTube para descargar el video.*\n\n📌 *Ejemplo:* ${usedPrefix}ytv https://www.youtube.com/watch?v=dQw4w9WgXcQ`,
     });
   }
 

@@ -54,12 +54,12 @@ async function ytdl(url) {
     'sec-fetch-dest': 'empty',
     'sec-fetch-mode': 'cors',
     'sec-fetch-site': 'cross-site',
-    referer: 'https://files.catbox.moe/2txrtp.jpgpp',
+    referer: 'https://id.ytmp3.mobi/',
     'referrer-policy': 'strict-origin-when-cross-origin'
   };
 
   try {
-    const initRes = await fetch(`https://files.catbox.moe/2txrtp.jpgpp { headers });
+    const initRes = await fetch(`https://d.ymcdn.org/api/v1/init?p=y&23=1llum1n471&_=${Date.now()}`, { headers });
     if (!initRes.ok) throw new Error('Fallo al inicializar la solicitud');
     const init = await initRes.json();
 
@@ -107,7 +107,7 @@ const checkRequestLimit = () => {
 // Handler principal
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) {
-    return conn.reply(m.chat, `👉 Uso: ${usedPrefix}${command} https://files.catbox.moe/2txrtp.jpgpp m);
+    return conn.reply(m.chat, `👉 Uso: ${usedPrefix}${command} https://youtube.com/watch?v=iQEVguV71sI`, m);
   }
 
   if (!isValidYouTubeUrl(text)) {

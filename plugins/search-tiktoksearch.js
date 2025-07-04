@@ -48,13 +48,13 @@ const tiktok = {
 
             const config = {
                 method: "post",
-                url: "https://files.catbox.moe/2txrtp.jpgpp",
+                url: "https://tikwm.com/api/feed/search",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
                     Accept: "application/json, text/javascript, */*; q=0.01",
                     "X-Requested-With": "XMLHttpRequest",
                     "User-Agent": "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36",
-                    Referer: "https://files.catbox.moe/2txrtp.jpgpp",
+                    Referer: "https://tikwm.com/",
 },
                 data: data,
 };
@@ -91,9 +91,9 @@ const tiktok = {
                         username: "@" + video.author.unique_id,
 },
                     media: {
-                        no_watermark: "https://files.catbox.moe/2txrtp.jpgpp" + video.play,
-                        watermark: "https://files.catbox.moe/2txrtp.jpgpp" + video.wmplay,
-                        audio: "https://files.catbox.moe/2txrtp.jpgpp" + video.music,
+                        no_watermark: "https://tikwm.com" + video.play,
+                        watermark: "https://tikwm.com" + video.wmplay,
+                        audio: "https://tikwm.com" + video.music,
 },
 }));
 } else {

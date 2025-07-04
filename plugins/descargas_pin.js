@@ -6,7 +6,7 @@ const handler = async (m, { conn, args, usedPrefix, command}) => {
 }
 
   const query = encodeURIComponent(args.join(" "));
-  const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
+  const apiUrl = `https://api.siputzx.my.id/api/s/pinterest?query=${query}`;
 
   try {
     await m.react("🔍");

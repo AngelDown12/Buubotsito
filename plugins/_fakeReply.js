@@ -1,17 +1,15 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 import fetch from 'node-fetch'
 
 export async function before(m, { conn }) {
 let name = `ᥴһᥲᥒᥒᥱᥣ-sᥲsᥙkᥱ ᑲ᥆𝗍 mძ 🌀`
-let imagenes = ["https://files.catbox.moe/2txrtp.jpgpp",
-"https://files.catbox.moe/2txrtp.jpgpp",
-"https://files.catbox.moe/2txrtp.jpgpp",
-"https://files.catbox.moe/2txrtp.jpgpp",]
+let imagenes = ["https://files.catbox.moe/2txrtp.jpgp",
+"https://files.catbox.moe/2txrtp.jpgp",
+"https://files.catbox.moe/2txrtp.jpgp",
+"https://files.catbox.moe/2txrtp.jpgp",]
 
 let icono = imagenes[Math.floor(Math.random() * imagenes.length)]
 
-global. = {
+global.rcanal = {
  contextInfo: {
              isForwarded: true,
     forwardedNewsletterMessageInfo: {
@@ -35,12 +33,12 @@ global. = {
 
 
 global.icono = [ 
-'https://files.catbox.moe/2txrtp.jpgpp',
-'https://files.catbox.moe/2txrtp.jpgpp',
-'https://files.catbox.moe/2txrtp.jpgpp',
-'https://files.catbox.moe/2txrtp.jpgpp',
-'https://files.catbox.moe/2txrtp.jpgpp',
-'https://files.catbox.moe/2txrtp.jpgpp',
+'https://files.catbox.moe/2txrtp.jpgp',
+'https://files.catbox.moe/2txrtp.jpgp',
+'https://files.catbox.moe/2txrtp.jpgp',
+'https://files.catbox.moe/2txrtp.jpgp',
+'https://files.catbox.moe/2txrtp.jpgp',
+'https://files.catbox.moe/2txrtp.jpgp',
 ].getRandom()
 
         global.fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./storage/img/catalogo.png'), thumbnail: fs.readFileSync('./storage/img/catalogo.png'), sendEphemeral: true } } }

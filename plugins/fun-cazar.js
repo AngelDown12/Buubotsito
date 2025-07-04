@@ -49,7 +49,7 @@ export const handler = async (m, { conn, usedPrefix, command }) => {
     const xp = Math.floor(Math.random() * (maxReward - minReward + 1)) + minReward
 
     const gptPrompt = `Genera un prompt perfecto y detallado para crear una imagen realista y atractiva de un animal de caza llamado "${animal.name}". Incluye detalles sobre su aspecto, entorno natural y cualquier característica única que lo haga sobresaliente.`
-    const gptUrl = `https://files.catbox.moe/2txrtp.jpgpp"Genera un prompt perfecto para imagen de caza")}&content=${encodeURIComponent(gptPrompt)}`
+    const gptUrl = `https://api.siputzx.my.id/api/ai/gpt3?prompt=${encodeURIComponent("Genera un prompt perfecto para imagen de caza")}&content=${encodeURIComponent(gptPrompt)}`
     
     try {
       const gptRes = await fetch(gptUrl)
@@ -58,7 +58,7 @@ export const handler = async (m, { conn, usedPrefix, command }) => {
       if (!gptJson.status || !gptJson.data) throw 'Respuesta inválida de ChatGPT.'
       
       const promptImagen = gptJson.data
-      const imagenUrl = `https://files.catbox.moe/2txrtp.jpgpp
+      const imagenUrl = `https://api.siputzx.my.id/api/ai/flux?prompt=${encodeURIComponent(promptImagen)}`
       const caption = `¡Increíble! Cazaste un@ *${animal.name}*.\n\n*Recompensas de Caza*\n□ Diamantes 💎: ${diamantes}\n□ Monedas 💰: ${monedas}\n□ Oro 🥇: ${oro}\n□ XP ⭐: ${xp}`
       
       await conn.sendMessage(m.chat, { image: { url: imagenUrl }, caption }, { quoted: m })

@@ -17,8 +17,8 @@ isForwarded: false,
 title: `[ sᥲsᥙkᥱ ᑲ᥆𝗍 mძ 🌀|sᥲsᥙkᥱ ᑲ᥆𝗍 ]`,
 body: ``,
 "previewType": "PHOTO",
-thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgpp', 
-sourceUrl: 'https://files.catbox.moe/2txrtp.jpgpp'}}},
+thumbnailUrl: 'https://tinyurl.com/2awg2bch', 
+sourceUrl: 'https://whatsapp.com/channel/0029VapSIvR5EjxsD1B7hU3T'}}},
 { quoted: m})
     } catch (err) {
         m.reply('error cik:/ ' + err);
@@ -34,7 +34,7 @@ export default handler;
 async function chatGpt(query){
 try {
 
-const { id_ }= (await axios.post("https://files.catbox.moe/2txrtp.jpgpp",{user_id: "crqryjoto2h3nlzsg"},{headers:{
+const { id_ }= (await axios.post("https://chat.chatgptdemo.net/new_chat",{user_id: "crqryjoto2h3nlzsg"},{headers:{
 "Content-Type": "application/json",
 
 }})).data
@@ -42,7 +42,7 @@ const { id_ }= (await axios.post("https://files.catbox.moe/2txrtp.jpgpp",{user_i
 const json = {"question":query,"chat_id": id_,"timestamp":new Date().getTime()}
 
 
-const { data } = await axios.post("https://files.catbox.moe/2txrtp.jpgpp",json,{headers:{
+const { data } = await axios.post("https://chat.chatgptdemo.net/chat_api_stream",json,{headers:{
 "Content-Type": "application/json",
 
 }})

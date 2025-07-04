@@ -1,5 +1,3 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 
 import { sticker} from '../lib/sticker.js'
 import uploadFile from '../lib/uploadFile.js'
@@ -30,10 +28,10 @@ let handler = async (m, { conn, args, usedPrefix, command}) => {
 │ ⏱️ *Máx. duración de video:* 15 segundos
 │
 │ 🌐 También puedes usar un enlace:
-│     *.sticker https://files.catbox.moe/2txrtp.jpgpp
+│     *.sticker https://files.catbox.moe/2txrtp.jpgp*
 │
 │ 🚀 ¡Exprésate con estilo!
-╰──────────────────────────────╯`, m, )
+╰──────────────────────────────╯`, m, rcanal)
 }
 
       let out
@@ -62,7 +60,7 @@ let handler = async (m, { conn, args, usedPrefix, command}) => {
 }
 } finally {
     if (stiker) {
-      conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, )
+      conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, rcanal)
 } else {
       return conn.reply(m.chat,
 `╭─〔 🤖 *STICKER BOT* 🤖 〕─╮
@@ -73,7 +71,7 @@ let handler = async (m, { conn, args, usedPrefix, command}) => {
 │     válido, o prueba con un enlace directo.
 │
 │ 📌 Si necesitas ayuda, usa *.menu*
-╰────────────────────────────╯`, m, )
+╰────────────────────────────╯`, m, rcanal)
 }
 }
 }

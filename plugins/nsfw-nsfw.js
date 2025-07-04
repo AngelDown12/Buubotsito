@@ -1,17 +1,28 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!global.db.data.chats[m.chat].nsfw) return conn.reply(m.chat, `[❗] 𝐋𝐨𝐬 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬 +𝟏𝟖 𝐞𝐬𝐭𝐚́𝐧 𝐝𝐞𝐬𝐚𝐜𝐭𝐢𝐯𝐚𝐝𝐨𝐬 𝐞𝐧 𝐞𝐬𝐭𝐞 𝐠𝐫𝐮𝐩𝐨.\n> 𝐬𝐢 𝐞𝐬 𝐚𝐝𝐦𝐢𝐧 𝐲 𝐝𝐞𝐬𝐞𝐚 𝐚𝐜𝐭𝐢𝐯𝐚𝐫𝐥𝐨𝐬 𝐮𝐬𝐞 .enable nsfw`, m, )
+if (!global.db.data.chats[m.chat].nsfw) return conn.reply(m.chat, `[❗] 𝐋𝐨𝐬 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬 +𝟏𝟖 𝐞𝐬𝐭𝐚́𝐧 𝐝𝐞𝐬𝐚𝐜𝐭𝐢𝐯𝐚𝐝𝐨𝐬 𝐞𝐧 𝐞𝐬𝐭𝐞 𝐠𝐫𝐮𝐩𝐨.\n> 𝐬𝐢 𝐞𝐬 𝐚𝐝𝐦𝐢𝐧 𝐲 𝐝𝐞𝐬𝐞𝐚 𝐚𝐜𝐭𝐢𝐯𝐚𝐫𝐥𝐨𝐬 𝐮𝐬𝐞 .enable nsfw`, m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+)
 
-let res = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
+let res = await fetch(`https://fantox-apis.vercel.app/${command}`)
 await m.react('🔥')
 try {
 if (!res.ok) throw await res.text()
 let json = await res.json()
 if (!json.url) throw m.react('✖️')
-await conn.sendFile(m.chat, json.url, 'thumbnail.jpg', `*» Resultado* : ${command}`, m, null, )
+await conn.sendFile(m.chat, json.url, 'thumbnail.jpg', `*» Resultado* : ${command}`, m, null, rcanal)
 await m.react('✅')
 } catch {
 await m.react('✖️')

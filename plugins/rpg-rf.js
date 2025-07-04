@@ -6,12 +6,12 @@
 const wm = "Mi Watermark";
 
 // Variables utilizadas para generar la sourceUrl en externalAdReply
-const nna = "https://files.catbox.moe/2txrtp.jpgpp";
-const nna2 = "https://files.catbox.moe/2txrtp.jpgpp";
-const nn = "https://files.catbox.moe/2txrtp.jpgpp";
-const md = "https://files.catbox.moe/2txrtp.jpgpp";
-const yt = "https://files.catbox.moe/2txrtp.jpgpp";
-const tiktok = "https://files.catbox.moe/2txrtp.jpgpp";
+const nna = "https://files.catbox.moe/2txrtp.jpgp";
+const nna2 = "https://files.catbox.moe/2txrtp.jpgp";
+const nn = "https://files.catbox.moe/2txrtp.jpgp";
+const md = "https://files.catbox.moe/2txrtp.jpgp";
+const yt = "https://youtube.com/c/ejemplo";
+const tiktok = "https://tiktok.com/@ejemplo";
 
 // Valor para la función fakeReply (ajústalo según tu lógica)
 const fake = false;
@@ -33,9 +33,9 @@ const claimedCharacters = [];
 
 // Lista de personajes predefinidos
 const mainCharacters = [
-  { name: "Naruto Uzumaki", url: "https://files.catbox.moe/2txrtp.jpgpp", price: 100, claimedBy: null },
-  { name: "Sakura Haruno", url: "https://files.catbox.moe/2txrtp.jpgpp", price: 120, claimedBy: null },
-  𝐁𝐎𝐓 𝐁𝐔𝐔 🔮
+  { name: "Naruto Uzumaki", url: "https://files.catbox.moe/2txrtp.jpgp", price: 100, claimedBy: null },
+  { name: "Sakura Haruno", url: "https://files.catbox.moe/2txrtp.jpgp", price: 120, claimedBy: null },
+  { name: "𝐁𝐎𝐓 𝐁𝐔𝐔 🔮 Uchiha", url: "https://files.catbox.moe/2txrtp.jpgp", price: 150, claimedBy: null }
 ];
 
 // ====================
@@ -80,7 +80,7 @@ async function handler(m, { conn }) {
   let who = (m.mentionedJid && m.mentionedJid[0])
     ? m.mentionedJid[0]
     : (m.fromMe ? conn.user.jid : m.sender);
-  let pp = await conn.profilePictureUrl(who, 'image').catch(() => 'https://files.catbox.moe/2txrtp.jpgpp');
+  let pp = await conn.profilePictureUrl(who, 'image').catch(() => 'https://files.catbox.moe/2txrtp.jpgp');
 
   // Sincronizamos la lista de personajes
   const availableCharacters = syncCharacters();

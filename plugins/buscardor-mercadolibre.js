@@ -1,11 +1,22 @@
-// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
-https://files.catbox.moe/2txrtp.jpgpp
 import axios from 'axios';
 import cheerio from 'cheerio';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 try {
-if (!text) throw conn.reply(m.chat, `⛄ *Formato incorrecto*\n*Ejemplo:*\n\n${usedPrefix + command}  TV Pantalla plana`, m, );
+if (!text) throw conn.reply(m.chat, `⛄ *Formato incorrecto*\n*Ejemplo:*\n\n${usedPrefix + command}  TV Pantalla plana`, m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+);
 let res = await mercado(text);
 let libre = '`⛄ M E R C A D O - L I B R E ⛄`\n\n';
 const limit = 15;
@@ -14,7 +25,20 @@ let link = res[i].link.length > 30 ? res[i].link.substring(0, 30) + '...' : res[
 libre += `*• Nombre:* ${res[i].title}\n*• Estado:* ${res[i].state}\n*• Link:* ${res[i].link}\n`;
 libre += '\n' + '••••••••••••••••••••••••' + '\n';
 }
-conn.reply(m.chat, libre, m, )
+conn.reply(m.chat, libre, m, 
+{
+  contextInfo: {
+    externalAdReply: {
+      title: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      body: '𝐁𝐎𝐓 𝐁𝐔𝐔 🔮',
+      mediaType: 1,
+      thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgp',
+      renderLargerThumbnail: false,
+      sourceUrl: ''
+    }
+  }
+}
+)
 } catch (error) {
 }};
 handler.help = ['mercadolibre <búsqueda>']
@@ -26,7 +50,7 @@ export default handler;
 
 async function mercado(query) {
 try {
-const url = `https://files.catbox.moe/2txrtp.jpgpp
+const url = `https://listado.mercadolibre.com.pe/${query}`;
 const response = await axios.get(url);
 const html = response.data;
 const $ = cheerio.load(html);

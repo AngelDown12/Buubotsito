@@ -6,7 +6,7 @@ let handler = async (m, { text, conn, command }) => {
  
     await conn.sendMessage(m.chat, { react: { text: "⏰", key: m.key }})
  
-    let res = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
+    let res = await fetch(`https://www.sankavolereii.my.id/search/tiktok?apikey=planaai&q=${encodeURIComponent(text)}`)
     let json = await res.json()
     if (!json.status || !json.result.length) return m.reply('❌ No se encontraron resultados.')
  
