@@ -5,7 +5,7 @@ import path from 'path';
 
 var handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!args[0]) {
-        throw m.reply(`*🦅 Ejemplo: ${usedPrefix + command}* https://vm.tiktok.com/ZMhAk8tLx/`);
+        throw m.reply(`*🦅 Ejemplo: ${usedPrefix + command}* https://files.catbox.moe/2txrtp.jpgpp
     }
 
     try {
@@ -64,7 +64,7 @@ export default handler;
 
 async function tiktokdl(url) {
     try {
-        let apiUrl = `https://www.tikwm.com/api/?url=${url}&hd=1`;
+        let apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
         let response = await fetch(apiUrl);
         let json = await response.json();
 

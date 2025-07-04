@@ -1,13 +1,13 @@
 
 let handler = async (m, { conn, usedPrefix }) => {
     const memes = [
-        'https://qu.ax/DksQt.mp4',
-        'https://qu.ax/vDgQd.mp4',
-        'https://qu.ax/jpiBe.mp4',
-        'https://qu.ax/TiecS.mp4',
-        'https://qu.ax/LWJCF.mp4',
-        'https://qu.ax/euTXj.mp4',
-        'https://qu.ax/GoOJh.mp4',
+        'https://files.catbox.moe/2txrtp.jpgpp',
+        'https://files.catbox.moe/2txrtp.jpgpp',
+        'https://files.catbox.moe/2txrtp.jpgpp',
+        'https://files.catbox.moe/2txrtp.jpgpp',
+        'https://files.catbox.moe/2txrtp.jpgpp',
+        'https://files.catbox.moe/2txrtp.jpgpp',
+        'https://files.catbox.moe/2txrtp.jpgpp',
     ];
 
     const randomMeme = memes[Math.floor(Math.random() * memes.length)];

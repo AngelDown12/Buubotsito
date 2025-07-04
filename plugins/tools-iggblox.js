@@ -6,7 +6,7 @@ const handler = async (m, { conn, args}) => {
 }
 
   const prompt = args.join(' ');
-  const apiUrl = `https://api.nekorinn.my.id/ai-img/imagen?text=${encodeURIComponent(prompt)}`;
+  const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
 
   try {
     m.reply('🧠 Imaginando tu escena... esto tomará solo un instante ☕');

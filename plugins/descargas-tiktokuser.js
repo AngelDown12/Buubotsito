@@ -1,18 +1,20 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 /* 
 - Downloader Tiktokuser By Jose XrL
 - Power By Team Code Titans
-- https://whatsapp.com/channel/0029ValMlRS6buMFL9d0iQ0S 
+- https://files.catbox.moe/2txrtp.jpgpp 
 */
 // *🍁 [ Tiktokuser Downloader ]*
 
 import axios from 'axios';
 
 let handler = async (m, { conn, usedPrefix, command, text }) => {
-  if (!text) return conn.reply(m.chat, '🚩 Ingresa el nombre de usuario de TikTok que deseas buscar.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* @jose.xrl15`, m, rcanal);
+  if (!text) return conn.reply(m.chat, '🚩 Ingresa el nombre de usuario de TikTok que deseas buscar.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* @jose.xrl15`, m, );
   await m.react('🕓');
   
   try {
-    const response = await axios.get(`https://apis-starlights-team.koyeb.app/starlight/tiktok-user-posts?user=${text}`);
+    const response = await axios.get(`https://files.catbox.moe/2txrtp.jpgpp
     
     if (response.data.status === 200) {
       const videos = response.data.data.videos;

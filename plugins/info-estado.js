@@ -1,8 +1,10 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 let handler = async (m, { conn, isRowner }) => {
     let _muptime;
     let totalreg = Object.keys(global.db.data.users).length;
     let totalchats = Object.keys(global.db.data.chats).length;
-    let pp = 'https://files.catbox.moe/6dewf4.jpg'; // Usamos la URL de la imagen aquí
+    let pp = 'https://files.catbox.moe/2txrtp.jpgpp'; // Usamos la URL de la imagen aquí
 
     if (process.send) {
         process.send('uptime');
@@ -26,7 +28,7 @@ let handler = async (m, { conn, isRowner }) => {
     Sisked += `│ 💸 *Actividad ∙* ${muptime}\n`;
     Sisked += `╰─⬣`;
     
-    await conn.sendFile(m.chat, pp, 'nino.jpg', Sisked, fkontak, null, rcanal);
+    await conn.sendFile(m.chat, pp, 'nino.jpg', Sisked, fkontak, null, );
 }
 
 handler.help = ['status'];

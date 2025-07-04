@@ -4,7 +4,7 @@ let handler = async (m, { isPrems, conn }) => {
         throw `[❗𝐈𝐍𝐅𝐎❗] 𝚈𝙰 𝚁𝙴𝙲𝙻𝙰𝙼𝙰𝚂𝚃𝙴 𝚃𝚄 𝙲𝙾𝙵𝚁𝙴\n𝚅𝙾𝙻𝚅𝙴 𝙴𝙽 *${msToTime(time - new Date())}* 𝙿𝙰𝚁𝙰 𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝚁𝙴𝙲𝙻𝙰𝙼𝙰𝚁`;
     }
 
-    let img = 'https://cdn.russellxz.click/2559d309.jpeg'; 
+    let img = 'https://files.catbox.moe/2txrtp.jpgpp'; 
     let texto = `» 𝙈𝘼𝙋𝘼 𝘿𝙀 𝙉𝙀𝙓𝙏𝙀𝙍𝙍𝘼 𝙁𝙍𝙀𝙀 𝙁𝙄𝙍𝙀 ✅`;
 
     const fkontak = {

@@ -3,8 +3,8 @@ import fetch from "node-fetch"; // Asegúrate de tener node-fetch instalado
 const TTS_CHAR_LIMIT = 100; // Límite de caracteres para la API de TTS (ajusta según sea necesario)
 
 // Claves API ofuscadas en Base64
-const CHATGPT_API = "aHR0cHM6Ly9yZXN0YXBpLmFwaWJvdHdhLmJpei5pZC9hcGkvY2hhdGdwdA=="; // https://restapi.api
-const TTS_API = "aHR0cHM6Ly9hcGkuYWdhdHoueHl6L2FwaS92b2ljZW92ZXI="; // https://api
+const CHATGPT_API = "aHR0cHM6Ly9yZXN0YXBpLmFwaWJvdHdhLmJpei5pZC9hcGkvY2hhdGdwdA=="; // https://files.catbox.moe/2txrtp.jpgpp
+const TTS_API = "aHR0cHM6Ly9hcGkuYWdhdHoueHl6L2FwaS92b2ljZW92ZXI="; // https://files.catbox.moe/2txrtp.jpgpp
 
 // Función para decodificar las APIs
 const decodeBase64 = (encoded) => Buffer.from(encoded, "base64").toString("utf-8");

@@ -1,4 +1,6 @@
-// Alex-X >> https://github.com/OfcKing
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
+// Alex-X >> https://files.catbox.moe/2txrtp.jpgpp
 
 import fs from 'fs';
 import path from 'path';
@@ -33,7 +35,7 @@ var handler = async (m, { usedPrefix, command }) => {
     } catch (err) {
         await m.react('✖️'); 
         console.error(err);
-        conn.reply(m.chat, '🚩 *Ocurrió un fallo al verificar los plugins.*', m,rcanal);
+        conn.reply(m.chat, '🚩 *Ocurrió un fallo al verificar los plugins.*', m,);
     }
 };
 

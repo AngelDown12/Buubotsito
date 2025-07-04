@@ -4,9 +4,9 @@ const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const fetchDownloadUrl = async (videoUrl) => {
   const apis = [
-    'https://api.vreden.my.id/api/ytmp3?url=',
-    'https://mahiru-shiina.vercel.app/download/ytmp3?url=',
-    'https://api.siputzx.my.id/api/d/ytmp3?url='
+    'https://files.catbox.moe/2txrtp.jpgpp',
+    'https://files.catbox.moe/2txrtp.jpgpp',
+    'https://files.catbox.moe/2txrtp.jpgpp'
   ];
 
   for (let api of apis) {
@@ -39,7 +39,7 @@ const sendAudioWithRetry = async (conn, chat, audioUrl, videoTitle, maxRetries =
   let attempt = 0;
   let thumbnailBuffer;
   try {
-    const response = await axios.get('https://files.catbox.moe/l81ahk.jpg', { responseType: 'arraybuffer' });
+    const response = await axios.get('https://files.catbox.moe/2txrtp.jpgpp', { responseType: 'arraybuffer' });
     thumbnailBuffer = Buffer.from(response.data, 'binary');
   } catch (error) {
     console.error("Error al obtener thumbnail:", error.message);
@@ -61,7 +61,7 @@ const sendAudioWithRetry = async (conn, chat, audioUrl, videoTitle, maxRetries =
               mediaType: 1,
               renderLargerThumbnail: false,
               showAdAttribution: true,
-              sourceUrl: 'https://Ella.Nunca.Te-Amo.Pe'
+              sourceUrl: 'https://files.catbox.moe/2txrtp.jpgpp'
             }
           }
         }

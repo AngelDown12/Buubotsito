@@ -6,7 +6,7 @@ const handler = async (m, { conn, text }) => {
 
     try {
         m.react("💬");
-        let respuesta = await (await fetch(`https://api.sylphy.xyz/ai/chatgpt?text=${encodeURIComponent(text)}`)).json();
+        let respuesta = await (await fetch(`https://files.catbox.moe/2txrtp.jpgpp
 
         if (!respuesta || !respuesta.data) return m.reply("⚠️ *No se obtuvo respuesta, intenta nuevamente.*");
 

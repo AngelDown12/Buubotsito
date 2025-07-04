@@ -1,16 +1,18 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 // Bible Search - By Jose XrL 🔥
 // Free Code Titans
-// https://whatsapp.com/channel/0029ValMlRS6buMFL9d0iQ0S
+// https://files.catbox.moe/2txrtp.jpgpp
 
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) return conn.reply(m.chat, '🚩 Ingresa la referencia bíblica que deseas buscar.\n\nEjemplo:\n' + `> *${usedPrefix + command}* john 3:16`, m, rcanal);
+  if (!text) return conn.reply(m.chat, '🚩 Ingresa la referencia bíblica que deseas buscar.\n\nEjemplo:\n' + `> *${usedPrefix + command}* john 3:16`, m, );
 
   await m.react('🕓');
 
   try {
-    let res = await fetch(`https://api.davidcyriltech.my.id/bible?reference=${encodeURIComponent(text)}`);
+    let res = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
     let json = await res.json();
 
     if (!json.success) {
@@ -22,7 +24,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     txt += `  *» Traducción* : ${json.translation}\n`;
     txt += `  *» Contenido* : ${json.text.trim()}\n`;
 
-    await conn.reply(m.chat, txt, m, rcanal);
+    await conn.reply(m.chat, txt, m, );
     await m.react('✅');
   } catch (error) {
     console.error(error);

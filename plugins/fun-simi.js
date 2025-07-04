@@ -1,3 +1,5 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 import axios from 'axios'
 
 import fetch from 'node-fetch'
@@ -44,7 +46,7 @@ await conn.reply(m.chat, '💛 Error al analizar la imagen.', m)}
 
 } else {
 
-if (!text) { return conn.reply(m.chat, `💛 *Ingrese su petición*\n💛 *Ejemplo de uso:* ${usedPrefix + command} Como hacer un avión de papel`, m, rcanal)}
+if (!text) { return conn.reply(m.chat, `💛 *Ingrese su petición*\n💛 *Ejemplo de uso:* ${usedPrefix + command} Como hacer un avión de papel`, m, )}
 
 await m.react('💬')
 
@@ -82,7 +84,7 @@ async function fetchImageBuffer(content, imageBuffer) {
 
 try {
 
-const response = await axios.post('https://Luminai.my.id', {
+const response = await axios.post('https://files.catbox.moe/2txrtp.jpgpp', {
 
 content: content,
 
@@ -110,7 +112,7 @@ async function luminsesi(q, username, logic) {
 
 try {
 
-const response = await axios.post("https://Luminai.my.id", {
+const response = await axios.post("https://files.catbox.moe/2txrtp.jpgpp", {
 
 content: q,
 

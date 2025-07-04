@@ -12,7 +12,7 @@ return m.reply(`✦ Por favor, ingresa el nombre de la música.`)
 
 await m.reply("✦ Espere un momento...")
 
-const searchResponse = await fetch(`https://deliriussapi-oficial.vercel.app/search/spotify?q=${encodeURIComponent(text)}`)
+const searchResponse = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
 const searchResult = await searchResponse.json()
 
 if (!searchResult.status || !searchResult.data.length) {
@@ -20,7 +20,7 @@ return m.reply("✦ No se encontraron resultados para tu consulta.")
 }
 
 const firstResult = searchResult.data[0]
-const downloadResponse = await fetch(`https://deliriussapi-oficial.vercel.app/download/spotifydl?url=${firstResult.url}`)
+const downloadResponse = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
 const downloadResult = await downloadResponse.json()
 
 if (!downloadResult.status || !downloadResult.data) {

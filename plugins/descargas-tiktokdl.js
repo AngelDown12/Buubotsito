@@ -6,7 +6,7 @@ const handler = async (m, { conn, args}) => {
     if (!args[0]) return conn.reply(m.chat, '❌ *Debes proporcionar un enlace de TikTok!*', m);
 
     const url = args[0];
-    const apiUrl = `https://api.nekorinn.my.id/downloader/tikwm?url=${encodeURIComponent(url)}`;
+    const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
 
     try {
         await m.react('🕒');

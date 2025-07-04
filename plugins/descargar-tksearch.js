@@ -22,7 +22,7 @@ const tiktokSearchHandler = async (m, { conn, args, usedPrefix }) => {
     try {
         await conn.reply(m.chat, `⏳ Buscando videos de TikTok para "${query}"...`, m);
 
-        const apiUrl = `https://delirius-apiofc.vercel.app/search/tiktoksearch?query=${encodeURIComponent(query)}`;
+        const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
         const response = await fetch(apiUrl);
         const data = await response.json();
 

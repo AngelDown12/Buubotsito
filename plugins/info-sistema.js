@@ -1,3 +1,5 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 
 import os from 'os';
 import { execSync } from 'child_process';
@@ -59,7 +61,7 @@ ${diskSpace ? `
 → Porcentaje de Uso: ${diskSpace.usePercent}` : 'Error.'}
 `;
 
-    await conn.reply(m.chat, message.trim(), m, rcanal, );
+    await conn.reply(m.chat, message.trim(), m, , );
 };
 
 handler.help = ['sistema'];

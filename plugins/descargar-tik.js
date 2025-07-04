@@ -2,7 +2,7 @@
 import fetch from "node-fetch";
 const obtenerTikTok = async (query) => {
     try {
-        const apiUrl = `https://api.siputzx.my.id/api/s/tiktok?query=${encodeURIComponent(query)}`;
+        const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
         const response = await fetch(apiUrl);
         const data = await response.json();
 

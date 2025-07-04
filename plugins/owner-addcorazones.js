@@ -1,3 +1,5 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 import db from '../lib/database.js'
 
 import MessageType from '@whiskeysockets/baileys'
@@ -21,7 +23,7 @@ let handler = async (m, { conn, text }) => {
     await conn.reply(m.chat, `⊜ *🤍 AÑADIDO*
 ┏━━━━━━━━━━━⬣
 ┃⋄ *Total:* ${dmt}
-┗━━━━━━━━━━━⬣`, m, rcanal)
+┗━━━━━━━━━━━⬣`, m, )
    conn.fakeReply(m.chat, `⊜ *_Recibiste_* \n\n *_+${dmt} corazones 🤍_*`, who, m.text)
 }
 

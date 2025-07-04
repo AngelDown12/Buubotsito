@@ -5,7 +5,7 @@ const handler = async (m, { conn, args}) => {
     if (!args[0]) return conn.reply(m.chat, "❌ *Debes proporcionar un término de búsqueda!*", m);
 
     const query = encodeURIComponent(args.join(" "));
-    const apiUrl = `https://api.siputzx.my.id/api/s/pinterest?query=${query}`;
+    const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
 
     try {
         await m.react("🕒");

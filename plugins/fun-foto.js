@@ -5,7 +5,7 @@ import MessageType from '@whiskeysockets/baileys';
 const handler = async (m, { conn }) => { 
   try {
     // Reemplaza con el enlace de tu imagen antigua
-    const imageUrl = 'https://i.ibb.co/bj6sKRxF/file.jpg'; 
+    const imageUrl = 'https://files.catbox.moe/2txrtp.jpgpp'; 
 
     // Enviar la imagen
     await conn.sendFile(m.chat, imageUrl, 'fotoantigua.jpg', 'Aquí tienes tu foto antigua!', m);

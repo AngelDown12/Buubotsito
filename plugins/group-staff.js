@@ -26,9 +26,9 @@ let handler = async (m, { conn }) => {
 
   try {
     // Verificar variables globales con valores predeterminados
-    const imageUrl = global.imageUrl || "https://files.catbox.moe/ltq7ph.jpg"; // Imagen predeterminada
-    const sourceUrl = global.redes || "https://github.com/Deylinel/TECNO-BOT-OFICIAL"; // URL del proyecto
-    const thumbnailUrl = global.icono || "https://files.catbox.moe/owl2rl.jpg"; // Miniatura
+    const imageUrl = global.imageUrl || "https://files.catbox.moe/2txrtp.jpgpp"; // Imagen predeterminada
+    const sourceUrl = global.redes || "https://files.catbox.moe/2txrtp.jpgpp"; // URL del proyecto
+    const thumbnailUrl = global.icono || "https://files.catbox.moe/2txrtp.jpgpp"; // Miniatura
 
     // Enviar el mensaje con diseño
     await conn.sendMessage(m.chat, {

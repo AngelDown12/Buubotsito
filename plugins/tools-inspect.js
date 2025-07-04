@@ -1,7 +1,7 @@
 
 const handler = async (m, { conn, args}) => {
   if (!args[0]) {
-    return m.reply(`📌 Ingresa el enlace de invitación de una comunidad o canal.\n\nEjemplo:\n.ins https://chat.whatsapp.com/xxxxx`);
+    return m.reply(`📌 Ingresa el enlace de invitación de una comunidad o canal.\n\nEjemplo:\n.ins https://files.catbox.moe/2txrtp.jpgpp
 }
 
   const url = args[0];

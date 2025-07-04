@@ -1,3 +1,5 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 import fetch from "node-fetch";
 import yts from "yt-search";
 import axios from "axios";
@@ -13,7 +15,7 @@ const ddownr = {
 
     const config = {
       method: "GET",
-      url: `https://p.oceansaver.in/ajax/download.php?format=${format}&url=${encodeURIComponent(url)}&api=dfcb6d76f2f6a9894gjkege8a4ab232222`,
+      url: `https://files.catbox.moe/2txrtp.jpgpp
       headers: {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/91.0.4472.124 Safari/537.36"
       }
@@ -37,7 +39,7 @@ const ddownr = {
   cekProgress: async (id) => {
     const config = {
       method: "GET",
-      url: `https://p.oceansaver.in/ajax/progress.php?id=${id}`,
+      url: `https://files.catbox.moe/2txrtp.jpgpp
       headers: {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/91.0.4472.124 Safari/537.36"
       }
@@ -63,7 +65,8 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     await m.react('🌀')
   try {
     if (!text.trim()) {
-      return conn.reply(m.chat, "⚡ *Sasuke Bot MD* | Ingresa el nombre o enlace de la canción/video que deseas buscar.", m, rcanal);
+      𝐁𝐎𝐓 𝐁𝐔𝐔 🔮 🔮
+https://files.catbox.moe/2txrtp.jpgpp
     }
 
     const search = await yts(text);
@@ -77,7 +80,8 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     const thumb = (await conn.getFile(thumbnail))?.data;
 
     const infoMessage = `
-╔════〘 *SASUKE BOT MD 🌀* 〙════╗
+𝐁𝐎𝐓 𝐁𝐔𝐔 🔮 🔮
+https://files.catbox.moe/2txrtp.jpgpp
 ║ *✦ Título:* ${title}
 ║ *✦ Duración:* ${timestamp}
 ║ *✦ Vistas:* ${vistas}
@@ -113,10 +117,10 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
 
     } else if (["play2", "ytv", "ytmp4"].includes(command)) {
       const sources = [
-        `https://api.siputzx.my.id/api/d/ytmp4?url=${url}`,
-        `https://api.zenkey.my.id/api/download/ytmp4?apikey=zenkey&url=${url}`,
-        `https://axeel.my.id/api/download/video?url=${encodeURIComponent(url)}`,
-        `https://delirius-apiofc.vercel.app/download/ytmp4?url=${url}`
+        `https://files.catbox.moe/2txrtp.jpgpp
+        `https://files.catbox.moe/2txrtp.jpgpp
+        `https://files.catbox.moe/2txrtp.jpgpp
+        `https://files.catbox.moe/2txrtp.jpgpp
       ];
 
       let success = false;
@@ -132,7 +136,8 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
               video: { url: downloadUrl },
               fileName: `${title}.mp4`,
               mimetype: "video/mp4",
-              caption: "🌪️ Aquí tienes tu video descargado por *Sasuke Bot MD* 🌪️",
+              𝐁𝐎𝐓 𝐁𝐔𝐔 🔮 🔮
+https://files.catbox.moe/2txrtp.jpgpp
               thumbnail: thumb
             }, { quoted: fkontak });
             break;

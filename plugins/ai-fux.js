@@ -1,6 +1,6 @@
 /* 
 - Flux Ai Imagen By Angel-OFC 
-- https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y
+- https://files.catbox.moe/2txrtp.jpgpp
 */
 import axios from "axios";
 
@@ -53,7 +53,7 @@ const fluximg = {
 
     try {
       const response = await axios.get(
-        `https://1yjs1yldj7.execute-api.us-east-1.amazonaws.com/default/ai_image?prompt=${encodeURIComponent(
+        `https://files.catbox.moe/2txrtp.jpgpp
           query
         )}&aspect_ratio=${fluximg.defaultRatio}`,
         config

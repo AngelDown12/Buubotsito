@@ -13,7 +13,7 @@ const getBuffer = async (url) => {
 }
 
 const translateGoogle = async (text, sourceLang, targetLang) => {
-  const response = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=${sourceLang}&tl=${targetLang}&dt=t&q=${encodeURIComponent(text)}`);
+  const response = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
   const result = await response.json();
   return result[0][0][0];
 }
@@ -63,7 +63,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
   if (!englishCommand) throw `El comando '${command}' no está soportado.`;
 
-  let reaction = await fetch(`https://api.waifu.pics/sfw/${englishCommand}`);
+  let reaction = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
   if (!reaction.ok) throw m.reply("Reacción no encontrada");
 
   let json = await reaction.json();

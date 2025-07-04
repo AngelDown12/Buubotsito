@@ -1,3 +1,5 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 import { unlinkSync, readFileSync } from 'fs'
 import { join } from 'path'
 import { exec } from 'child_process'
@@ -45,7 +47,7 @@ let handler = async (m, { conn, args, __dirname, usedPrefix, command }) => {
                 })
                 await m.react('✅')
             })
-        } else return conn.reply(m.chat, `🧑‍💻 RESPONDA AL AUDIO O NOTA DE VOZ 🎵*`, m, rcanal)
+        } else return conn.reply(m.chat, `🧑‍💻 RESPONDA AL AUDIO O NOTA DE VOZ 🎵*`, m, )
     } catch {
         await m.react('✖️')
     }

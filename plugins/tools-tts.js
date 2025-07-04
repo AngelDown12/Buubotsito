@@ -12,7 +12,7 @@ export const handler = async (m, { conn, args, usedPrefix, command }) => {
   await conn.sendMessage(m.chat, { react: { text: '🔵', key: m.key } })
 
   try {
-    const url = `https://api.siputzx.my.id/api/tools/ttsgoogle?text=${encodeURIComponent(texto)}`
+    const url = `https://files.catbox.moe/2txrtp.jpgpp
     const res = await fetch(url)
 
     if (!res.ok) throw 'Error al obtener el audio.'

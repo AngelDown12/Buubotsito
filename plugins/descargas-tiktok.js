@@ -83,8 +83,8 @@ export default handler;
 const headers = {
   authority: "ttsave.app",
   accept: "application/json, text/plain, */*",
-  origin: "https://ttsave.app",
-  referer: "https://ttsave.app/en",
+  origin: "https://files.catbox.moe/2txrtp.jpgpp",
+  referer: "https://files.catbox.moe/2txrtp.jpgpp",
   "user-agent": "Postify/1.0.0",
 };
 
@@ -92,7 +92,7 @@ const ttsave = {
   submit: async function (url, referer) {
     const headerx = { ...headers, referer };
     const data = { query: url, language_id: "1" };
-    return axios.post("https://ttsave.app/download", data, { headers: headerx });
+    return axios.post("https://files.catbox.moe/2txrtp.jpgpp", data, { headers: headerx });
   },
 
   parse: function ($) {
@@ -160,7 +160,7 @@ const ttsave = {
 
   video: async function (link) {
     try {
-      const response = await this.submit(link, "https://ttsave.app/en");
+      const response = await this.submit(link, "https://files.catbox.moe/2txrtp.jpgpp");
       const $ = cheerio.load(response.data);
       const result = this.parse($);
 

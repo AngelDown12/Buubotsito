@@ -128,7 +128,7 @@ export default handler
 
 const rednoteDownloader = {
   getToken: async function () {
-    const req = await fetch("https://anydownloader.com/en/xiaohongshu-videos-and-photos-downloader");
+    const req = await fetch("https://files.catbox.moe/2txrtp.jpgpp");
     if (!req.ok) return null;
     
     const res = await req.text();
@@ -157,7 +157,7 @@ const rednoteDownloader = {
     data.append('token', token);
     data.append('hash', hash);
     
-    const req = await fetch(`https://anydownloader.com/wp-json/aio-dl/video-data/`, {
+    const req = await fetch(`https://files.catbox.moe/2txrtp.jpgpp {
       method: "POST",
       headers: {
         "Accept": "*/*",
@@ -165,8 +165,8 @@ const rednoteDownloader = {
         "Accept-Language": "en-US,en;q=0.9,id-ID;q=0.8,id;q=0.7,as;q=0.6",
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
         "Dnt": "1",
-        "Origin": "https://anydownloader.com",
-        "Referer": "https://anydownloader.com/en/xiaohongshu-videos-and-photos-downloader",
+        "Origin": "https://files.catbox.moe/2txrtp.jpgpp",
+        "Referer": "https://files.catbox.moe/2txrtp.jpgpp",
         "Sec-Ch-Ua": `"Not-A.Brand";v="99", "Chromium";v="124"`,
         "Sec-Ch-Ua-Mobile": "?1",
         "Sec-Ch-Ua-Platform": `"Android"`,

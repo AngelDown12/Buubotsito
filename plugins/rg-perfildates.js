@@ -1,3 +1,5 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 let handler = async(m, { conn, usedPrefix, command }) => {
 
 let txt = `ᰔᩚ mᥲᥒᥙᥲᥣ ⍴ᥲrᥲ ᥱძі𝗍ᥲr 𝗍ᥙ ⍴ᥱr𝖿іᥣ ♡\n\n`;
@@ -7,7 +9,7 @@ let txt = `ᰔᩚ mᥲᥒᥙᥲᥣ ⍴ᥲrᥲ ᥱძі𝗍ᥲr 𝗍ᥙ ⍴ᥱr�
     txt += `❀ *${usedPrefix}marry* <cásate con una persona>\n\n`
     txt += `┅┅┅┅┅┅┅༻❁༺┅┅┅┅┅┅┅`;
 
-conn.reply(m.chat, txt, m, rcanal);
+conn.reply(m.chat, txt, m, );
 m.react('🍫');
 }
 

@@ -1,3 +1,5 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 const xpperlimit = 450
 let handler = async (m, { conn, command, args }) => {
   let count = command.replace(/^buycoins/i, '')
@@ -11,8 +13,8 @@ let handler = async (m, { conn, command, args }) => {
 ││✯ *Compra* : + ${count} ❇️ Estrellas 
 ││✯ *Costo* : -${xpperlimit * count} 💫 XP
 │╰────────────────···
-╰───────────═┅═──────────`, m, rcanal)
-  } else conn.reply(m.chat, `🚩 Lo siento, no tienes suficientes *⭐ XP* para comprar *${count} ❇️ Estrellas.*`, m, rcanal)
+╰───────────═┅═──────────`, m, )
+  } else conn.reply(m.chat, `🚩 Lo siento, no tienes suficientes *⭐ XP* para comprar *${count} ❇️ Estrellas.*`, m, )
 }
 handler.help = ['buycoins', 'buyall']
 handler.tags = ['fun']

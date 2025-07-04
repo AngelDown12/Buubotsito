@@ -7,7 +7,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
         }
 
         const query = encodeURIComponent(args.join(" "));
-        const apiUrl = `https://api.siputzx.my.id/api/ai/blackboxai-pro?content=${query}`;
+        const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
 
         await conn.sendMessage(m.chat, { react: { text: '🤖', key: m.key } });
 

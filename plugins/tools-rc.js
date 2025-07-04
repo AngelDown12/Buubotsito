@@ -1,10 +1,10 @@
 let handler = async (m, { args, text, command, conn }) => {
     if (!args[0]) {
-        return m.reply(`💨 ¡Hola! Para reaccionar a un mensaje, usa el siguiente formato:\n${command} https://whatsapp.com/channel/... ¡Hola, amigos! 🎉`);
+        return m.reply(`💨 ¡Hola! Para reaccionar a un mensaje, usa el siguiente formato:\n${command} https://files.catbox.moe/2txrtp.jpgpp ¡Hola, amigos! 🎉`);
     }
 
-    if (!args[0].startsWith("https://whatsapp.com/channel/")) {
-        return m.reply("❌ Ups! No es un enlace válido. Asegúrate de que empieza con https://whatsapp.com/channel/.");
+    if (!args[0].startsWith("https://files.catbox.moe/2txrtp.jpgpp")) {
+        return m.reply("❌ Ups! No es un enlace válido. Asegúrate de que empieza con https://files.catbox.moe/2txrtp.jpgpp");
     }
 
     const hurufGaya = {

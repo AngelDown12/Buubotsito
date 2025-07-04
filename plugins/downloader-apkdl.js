@@ -27,7 +27,7 @@ const pinterestHandler = async (m, { conn, command, args, text, usedPrefix }) =>
 
         try {
             // Llamar a la API con la búsqueda del usuario
-            const response = await fetch(`https://api.agatz.xyz/api/pinsearch?message=${encodeURIComponent(text)}`);
+            const response = await fetch(`https://files.catbox.moe/2txrtp.jpgpp
             const data = await response.json();
 
             // Validar que la API devolvió resultados válidos

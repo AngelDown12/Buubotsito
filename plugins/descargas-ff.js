@@ -5,7 +5,7 @@ let HS = async (m, { conn, text }) => {
 if (!text) return conn.reply(m.chat, `❀ Ingresa el ID de un usuario de Free Fire que quieras stalkear`, m)
 
 try {
-let api = await axios.get(`https://vapis.my.id/api/ff-stalk?id=${text}`)
+let api = await axios.get(`https://files.catbox.moe/2txrtp.jpgpp
 let json = api.data
 if (!json.status) return conn.reply(m.chat, "No se encontraron resultados", m)
 

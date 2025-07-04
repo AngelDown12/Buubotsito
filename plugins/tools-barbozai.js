@@ -8,7 +8,7 @@ const handler = async (m, { conn, args }) => {
 
   const text = args.join(' ');
   const fontSize = 50; 
-  const apiUrl = `https://api.dorratz.com/v3/text-image?text=${encodeURIComponent(text)}&fontSize=${fontSize}`;
+  const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
 
   try {
     await m.react('⏳');

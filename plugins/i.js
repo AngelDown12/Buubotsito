@@ -13,7 +13,7 @@ const handler = async (m, { conn, args }) => {
     }
 
     const prompt = args.join(' ');
-    const apiUrl = `https://api.dorratz.com/v3/ai-image?prompt=${prompt}`;
+    const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
 
     try {
         conn.reply(m.chat, '*🧧 Espere un momento...*', m);

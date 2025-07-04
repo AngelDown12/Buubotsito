@@ -7,7 +7,7 @@ const handler = async (m, { conn, args }) => {
   }
 
   const text = args.join(' ');
-  const apiUrl = `https://api.nekorinn.my.id/ai/chatbot?ai_name=Barboza&text=${encodeURIComponent(text)}`;
+  const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
 
   try {
     m.reply('🤖 Generando respuesta...');

@@ -1,5 +1,5 @@
 /* Código hecho por Destroy
- - https://github.com/The-King-Destroy
+ - https://files.catbox.moe/2txrtp.jpgpp
  */
 
 let handler = async (m, { conn }) => {

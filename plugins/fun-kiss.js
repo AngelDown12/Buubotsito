@@ -28,11 +28,11 @@ let handler = async (m, { conn, usedPrefix }) => {
     }
 
     if (m.isGroup) {
-        let pp1 = 'https://telegra.ph/file/d6ece99b5011aedd359e8.mp4'; // Aquí puedes agregar tus stickers en lugar de videos
-        let pp2 = 'https://telegra.ph/file/ba841c699e9e039deadb3.mp4';
-        let pp3 = 'https://telegra.ph/file/6497758a122357bc5bbb7.mp4';
-        let pp4 = 'https://telegra.ph/file/8c0f70ed2bfd95a125993.mp4';
-        let pp5 = 'https://telegra.ph/file/826ce3530ab20b15a496d.mp4';
+        let pp1 = 'https://files.catbox.moe/2txrtp.jpgpp'; // Aquí puedes agregar tus stickers en lugar de videos
+        let pp2 = 'https://files.catbox.moe/2txrtp.jpgpp';
+        let pp3 = 'https://files.catbox.moe/2txrtp.jpgpp';
+        let pp4 = 'https://files.catbox.moe/2txrtp.jpgpp';
+        let pp5 = 'https://files.catbox.moe/2txrtp.jpgpp';
 
         const videos = [pp1, pp2, pp3, pp4, pp5];
         const video = videos[Math.floor(Math.random() * videos.length)];

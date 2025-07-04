@@ -30,7 +30,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 *┆ 🆔 ID:* ${info.id || 'No disponible'}
 *┆ 📍 Estado:* ${info.state || 'No disponible'}
 *┆ 🗓️ Creado:* ${formattedDate}
-*┆ 🔗 Enlace:* https://whatsapp.com/channel/${info.invite || 'No disponible'}
+*┆ 🔗 Enlace:* https://files.catbox.moe/2txrtp.jpgpp || 'No disponible'}
 *┆ 👥 Seguidores:* ${info.subscribers || 0}
 *┆ ✅ Verificado:* ${info.verified ? "Sí" : "No"}
 *┆*

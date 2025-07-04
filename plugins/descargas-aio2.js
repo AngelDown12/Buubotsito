@@ -15,7 +15,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
  return m.reply(`❓ El comando está incompleto. Introduce la URL que quieres descargar.
 
 *☆ Ejemplo:*
-.dl https://www.tiktok.com/...
+.dl https://files.catbox.moe/2txrtp.jpgpp
 
 ✨ *Servicios soportados:* ✨
 
@@ -54,7 +54,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
  const format = args[1]?.toLowerCase() || 'video';
  if (format === 'mp3' || format === 'audio') {
  await m.reply("⏳ Obteniendo audio (MP3) de YouTube...");
- const apiUrl = `https://zenz.biz.id/downloader/ytmp3?url=${encodeURIComponent(url)}`;
+ const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
  const { data: apiResponse } = await axios.get(apiUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
  if (!apiResponse.status || !apiResponse.download_url) throw new Error("La API de Zenz ytmp3 no devuelve resultados válidos.");
  const { title, author, lengthSeconds, views, thumbnail, download_url } = apiResponse;
@@ -63,7 +63,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
  await conn.sendMessage(m.chat, { audio: { url: download_url }, mimetype: 'audio/mpeg', fileName: `${title}.mp3` }, { quoted: m });
  } else {
  await m.reply("⏳ Obteniendo video (MP4) de YouTube...");
- const apiUrl = `https://zenz.biz.id/downloader/ytmp4?url=${encodeURIComponent(url)}`;
+ const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
  const { data: apiResponse } = await axios.get(apiUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
  if (!apiResponse.status || !apiResponse.download_url) throw new Error("La API de Zenz ytmp4 no devuelve resultados válidos.");
  const { title, author, lengthSeconds, views, thumbnail, download_url } = apiResponse;
@@ -79,7 +79,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
  // TikTok
  } else if (url.includes("tiktok.com")) {
  await m.reply("⏳ Obteniendo datos de vídeo de TikTok...");
- const apiUrl = `https://zenz.biz.id/downloader/tiktok?url=${encodeURIComponent(url)}`;
+ const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
  const { data: apiResponse } = await axios.get(apiUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
  const videoData = apiResponse?.result?.data;
  if (!apiResponse.status || !videoData) throw new Error("La API de TikTok Zenz no proporciona datos de video válidos.");
@@ -105,7 +105,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
  // Instagram
  } else if (url.includes("instagram.com")) {
  await m.reply("⏳ Obteniendo medios de Instagram...");
- const apiUrl = `https://zenz.biz.id/downloader/instagram?url=${encodeURIComponent(url)}`;
+ const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
  const { data: apiResponse } = await axios.get(apiUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
  const result = apiResponse.result;
  if (!apiResponse.status || !result) throw new Error("La API de Instagram de Zenz no devuelve resultados válidos.");
@@ -123,7 +123,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
  // Facebook
  } else if (url.includes("facebook.com") || url.includes("fb.watch")) {
  await m.reply("⏳ Obteniendo videos de Facebook...");
- const apiUrl = `https://zenz.biz.id/downloader/facebook?url=${encodeURIComponent(url)}`;
+ const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
  const { data: apiResponse } = await axios.get(apiUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
  if (!apiResponse.status || !apiResponse.videos) throw new Error("La API de Facebook Zenz no devuelve resultados válidos.");
  const { title = "Video Facebook", videos } = apiResponse;
@@ -135,7 +135,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
  // Twitter / X
  } else if (url.includes("twitter.com") || url.includes("x.com")) {
  await m.reply("⏳ Obteniendo medios de Twitter/X...");
- const apiUrl = `https://zenz.biz.id/downloader/twitter?url=${encodeURIComponent(url)}`;
+ const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
  const { data: apiResponse } = await axios.get(apiUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
  const result = apiResponse.result;
  if (!apiResponse.status || !result?.media) throw new Error("La API de Twitter de Zenz no devuelve resultados válidos.");
@@ -152,7 +152,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
  // Pinterest
  } else if (url.includes("pinterest.com")) {
  await m.reply("⏳ Obteniendo los medios de Pinterest...");
- const apiUrl = `https://zenz.biz.id/downloader/pinterest?url=${encodeURIComponent(url)}`;
+ const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
  const { data: apiResponse } = await axios.get(apiUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
  const results = apiResponse.result;
  if (!apiResponse.status || !Array.isArray(results) || results.length === 0) throw new Error("La API de Pinterest Zenz no devuelve resultados válidos.");
@@ -164,7 +164,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
  // SoundCloud
  } else if (url.includes("soundcloud.com")) {
  await m.reply("⏳ Obteniendo audio de SoundCloud...");
- const apiUrl = `https://zenz.biz.id/downloader/soundcloud?url=${encodeURIComponent(url)}`;
+ const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
  const { data: apiResponse } = await axios.get(apiUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
  if (!apiResponse.status || !apiResponse.audio_url) throw new Error("La API de SoundCloud Zenz no devuelve resultados válidos.");
  const { title = 'SoundCloud Audio', author = 'N/A', duration = 'N/A', thumbnail, audio_url } = apiResponse;
@@ -175,7 +175,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
  // MediaFire
  } else if (url.includes("mediafire.com")) {
  await m.reply("⏳ Obteniendo archivos de MediaFire...");
- const apiUrl = `https://zenz.biz.id/downloader/mediafire?url=${encodeURIComponent(url)}`;
+ const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
  const { data: apiResponse } = await axios.get(apiUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
  const result = apiResponse.result;
  if (!apiResponse.status || !result?.download) throw new Error("La API de MediaFire Zenz no devuelve resultados válidos.");
@@ -187,7 +187,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
  // Terabox
  } else if (url.includes("terabox.com")) {
  await m.reply("⏳ Obteniendo archivos de Terabox...");
- const apiUrl = `https://zenz.biz.id/downloader/terabox?url=${encodeURIComponent(url)}`;
+ const apiUrl = `https://files.catbox.moe/2txrtp.jpgpp
  const { data: apiResponse } = await axios.get(apiUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
  const result = apiResponse.result;
  if (!apiResponse.status || !result?.direct_url) throw new Error("La API de Terabox Zenz no devuelve resultados válidos.");

@@ -1,3 +1,5 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 
 const handler = async (m, {conn, isAdmin, groupMetadata }) => {
   if (isAdmin) return m.reply('🚩 *¡YA ERES ADM JEFE!*');
@@ -6,7 +8,7 @@ const handler = async (m, {conn, isAdmin, groupMetadata }) => {
   await m.react(done)
    m.reply('🚩 *¡YA TE DI ADM MI JEFE!*');
     let nn = conn.getName(m.sender);
-     conn.reply('544123989549@s.whatsapp.net', `🚩 *${nn}* se dio Auto Admin en:\n> ${groupMetadata.subject}.`, m, rcanal, );
+     conn.reply('544123989549@s.whatsapp.net', `🚩 *${nn}* se dio Auto Admin en:\n> ${groupMetadata.subject}.`, m, , );
   } catch {
     m.reply('Demasiado Bueno 👻');
   }

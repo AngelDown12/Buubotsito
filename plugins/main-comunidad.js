@@ -1,5 +1,5 @@
 const handler = async (m, { conn }) => {
-  let gifUrl = "https://files.catbox.moe/ltq7ph.jpg";
+  let gifUrl = "https://files.catbox.moe/2txrtp.jpgpp";
 
   let text = `
  ──────── ⚔ ────────  
@@ -9,14 +9,14 @@ const handler = async (m, { conn }) => {
 *Bot barboza*  
 • ,👥➤ **Grupo de WhatsApp de la comunidad de sᥲsᥙkᥱ ᑲ᥆𝗍 mძ 🌀**  
    Únete para compartir y resolver dudas con otros usuarios. 
-  ➤https://whatsapp.com/channel/0029Vaua0ZD3gvWjQaIpSy18
+  ➤https://files.catbox.moe/2txrtp.jpgpp
 
 • 📢 ➤ *Canal de Bot Barboza Ai*  
    Recibe actualizaciones, noticias y lanzamientos del bot.  
-https://whatsapp.com/channel/0029Vaua0ZD3gvWjQaIpSy18
+https://files.catbox.moe/2txrtp.jpgpp
 • 💬 ➤ *Grupo de WhatsApp activo*  
    Chatea con usuarios en tiempo real y sé parte de la conversación y usa al bot que esta de uso libre.  
-➤https://chat.whatsapp.com/E1kx7olE0RpA18BdALdaWV
+➤https://files.catbox.moe/2txrtp.jpgpp
 
 ──────── ⚔ ────────  
 🔍 *¿Sabías que...?* 

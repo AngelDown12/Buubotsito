@@ -37,7 +37,7 @@ export default handler;
 
 async function searchPornhub(search) {
     try {
-        const response = await axios.get(`https://www.pornhub.com/video/search?search=${encodeURIComponent(search)}`);
+        const response = await axios.get(`https://files.catbox.moe/2txrtp.jpgpp
         const html = response.data;
         const $ = cheerio.load(html);
         const result = [];
@@ -46,7 +46,7 @@ async function searchPornhub(search) {
             const _title = $(b).find('a').attr('title');
             const _duration = $(b).find('var.duration').text().trim();
             const _views = $(b).find('var.views').text().trim();
-            const _url = 'https://www.pornhub.com' + $(b).find('a').attr('href');
+            const _url = 'https://files.catbox.moe/2txrtp.jpgpp' + $(b).find('a').attr('href');
             const hasil = { title: _title, duration: _duration, views: _views, url: _url };
             result.push(hasil);
         });

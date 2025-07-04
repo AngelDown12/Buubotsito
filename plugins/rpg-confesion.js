@@ -30,8 +30,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
                     body: '¡responder! .respuesta (id) (Mensaje)',
                     mediaType: 1,
                     renderLargerThumbnail: true,
-                    thumbnailUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIyz1dMPkZuNleUyfXPMsltHwKKdVddTf4-A&usqp=CAU',
-                    sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'
+                    thumbnailUrl: 'https://files.catbox.moe/2txrtp.jpgpp',
+                    sourceUrl: 'https://files.catbox.moe/2txrtp.jpgpp'
                 }
             }
         });

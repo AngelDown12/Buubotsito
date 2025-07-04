@@ -1,5 +1,7 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 function handler(m, { text }) {
-if (!text) return conn.reply(m.chat, '⌨ Por favor, ingresa el texto que quieres transformar.', m, rcanal)
+if (!text) return conn.reply(m.chat, '⌨ Por favor, ingresa el texto que quieres transformar.', m, )
 
 let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
 m.reply(teks.replace(/[a-z]/gi, v => {

@@ -1,13 +1,15 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 
 import axios from 'axios';
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0]) return conn.reply(m.chat, `🚩 Ingrese un título de película para buscar\n\nEjemplo:\n> *${usedPrefix + command}* diablo`, m, rcanal);
+    if (!args[0]) return conn.reply(m.chat, `🚩 Ingrese un título de película para buscar\n\nEjemplo:\n> *${usedPrefix + command}* diablo`, m, );
 
     await m.react('🕓');
     try {
         // Hacer una solicitud a la API de búsqueda de películas
-        const response = await axios.get(`https://api.dorratz.com/v2/pelis-search?q=${encodeURIComponent(args.join(' '))}`);
+        const response = await axios.get(`https://files.catbox.moe/2txrtp.jpgpp' '))}`);
         
         // Verificar si la solicitud fue exitosa
         if (!response.data.status) {

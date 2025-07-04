@@ -1,4 +1,4 @@
-/* Creado por Bruno Sobrino (https://github.com/Night) */
+/* Creado por Bruno Sobrino (https://files.catbox.moe/2txrtp.jpgpp */
 import fetch from 'node-fetch';
 import axios from 'axios';
 
@@ -13,13 +13,13 @@ const handler = async (m, {text, usedPrefix, command, conn}) => {
     aaaa = await searchC(text);
     const randomIndex = Math.floor(Math.random() * aaaa.length);
     try {
-        img = 'https://wwv.cuevana8.com' + aaaa[randomIndex].image;
+        img = 'https://files.catbox.moe/2txrtp.jpgpp' + aaaa[randomIndex].image;
     } catch {
-        img = 'https://www.poresto.net/u/fotografias/m/2023/7/5/f1280x720-305066_436741_5050.png';
+        img = 'https://files.catbox.moe/2txrtp.jpgpp';
     }    
-  if (aaaa == '') throw `*${tradutor.texto2}*`;                                        /* https://wwv.cuevana8.com */
+  if (aaaa == '') throw `*${tradutor.texto2}*`;                                        /* https://files.catbox.moe/2txrtp.jpgpp */
   const res = await aaaa.map((v) => `*${tradutor.texto3[0]}* ${v.title}\n*${tradutor.texto3[1]}* ${v.link}`).join`\n\n─────────────────\n\n`;
-  const ads = `*${tradutor.texto3[2]}* ${tradutor.texto3[3]}\n*${tradutor.texto3[4]}* https://block-this.com/block-this-latest.apk\n\n≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣≣\n\n`;
+  const ads = `*${tradutor.texto3[2]}* ${tradutor.texto3[3]}\n*${tradutor.texto3[4]}* https://files.catbox.moe/2txrtp.jpgpp
   conn.sendMessage(m.chat, {image: {url: img}, caption: ads + res}, {quoted: m});
  } catch {
    return conn.sendMessage(m.chat, {text: '*[❗] Error, no se obtuvieron resultados.'}, {quoted: m});   
@@ -29,7 +29,7 @@ handler.command = ['cuevana', 'pelisplus'];
 export default handler;
 
 async function searchC(query) {
-  const response = await axios.get(`https://wwv.cuevana8.com/search?q=${query}`);
+  const response = await axios.get(`https://files.catbox.moe/2txrtp.jpgpp
   const $ = cheerio.load(response.data);
   const resultSearch = [];
   $('.MovieList .TPostMv').each((_, e) => {

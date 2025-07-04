@@ -13,7 +13,7 @@ Uso: *${usedPrefix + command}* NGL|Hola mundo`
     const textInput = args[1];
 
     try {
-        const response = await axios.get(`https://flowfalcon.dpdns.org/imagecreator/ngl?title= ${encodeURIComponent(title)}&text=${encodeURIComponent(textInput)}`, {
+        const response = await axios.get(`https://files.catbox.moe/2txrtp.jpgpp ${encodeURIComponent(title)}&text=${encodeURIComponent(textInput)}`, {
             responseType: 'arraybuffer',
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36'

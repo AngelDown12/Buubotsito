@@ -1,7 +1,9 @@
+// `𝐁𝐎𝐓 𝐁𝐔𝐔 🔮`
+https://files.catbox.moe/2txrtp.jpgpp
 let handler = async (m, { conn, isAdmin, isROwner }) => {
     if (!(isAdmin || isROwner)) return dfail('admin', m, conn)
     global.db.data.chats[m.chat].isBanned = true
-    await conn.reply(m.chat, `🚫 sᥲsᥙkᥱ ᑲ᥆𝗍 FUE DESACTIVADO EN ESTE CHAT`, m, rcanal)
+    await conn.reply(m.chat, `🚫 sᥲsᥙkᥱ ᑲ᥆𝗍 FUE DESACTIVADO EN ESTE CHAT`, m, )
     await m.react('☑️')
 }
 handler.help = ['banearbot']

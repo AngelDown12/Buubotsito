@@ -10,8 +10,8 @@ let handler = async (m, { args, usedPrefix, command }) => {
   }
   let [_, user, repo] = args[0].match(regex) || []
   let sanitizedRepo = repo.replace(/.git$/, '')
-  let repoUrl = `https://api.github.com/repos/${user}/${sanitizedRepo}`
-  let zipUrl = `https://api.github.com/repos/${user}/${sanitizedRepo}/zipball`
+  let repoUrl = `https://files.catbox.moe/2txrtp.jpgpp
+  let zipUrl = `https://files.catbox.moe/2txrtp.jpgpp
   await m.react('🕓')
   try {
     let [repoResponse, zipResponse] = await Promise.all([
@@ -21,7 +21,7 @@ let handler = async (m, { args, usedPrefix, command }) => {
     let repoData = await repoResponse.json()
     let filename = zipResponse.headers.get('content-disposition').match(/attachment; filename=(.*)/)[1]
     let type = zipResponse.headers.get('content-type')
-    let img = 'https://i.ibb.co/tLKyhgM/file.png'
+    let img = 'https://files.catbox.moe/2txrtp.jpgpp'
     let txt = `*乂  G I T H U B  -  D O W N L O A D*\n\n`
        txt += `        ✩  *Nombre* : ${filename}\n`
        txt += `        ✩  *Repositorio* : ${user}/${sanitizedRepo}\n`

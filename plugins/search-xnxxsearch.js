@@ -41,7 +41,7 @@ export default handler;
 
 async function xnxxsearch(query) {
   return new Promise((resolve, reject) => {
-    const baseurl = 'https://www.xnxx.com';
+    const baseurl = 'https://files.catbox.moe/2txrtp.jpgpp';
     fetch(`${baseurl}/search/${query}/${Math.floor(Math.random() * 3) + 1}`, {method: 'get'}).then((res) => res.text()).then((res) => {
       const $ = cheerio.load(res, {xmlMode: false});
       const title = [];
